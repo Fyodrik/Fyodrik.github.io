@@ -7,11 +7,11 @@ html,body{
 }
 a{
 	color:rgba(255,25,0,.7);
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 a:hover{
 	color:rgba(255,25,0,1);
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 /* MAIN SITE-SECTION */
 #header{
@@ -39,6 +39,7 @@ a:hover{
 	font-size: 40px;
 	line-height: 50px;
 	margin:0;
+	padding:0;
 	list-style:none;
 }
 #nav-filter-menu li{
@@ -46,12 +47,12 @@ a:hover{
 	margin-left:7px;
 	float:left;
 	text-decoration:none;
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 #nav-filter-menu li:hover{
 	color:rgb(255,25,0);
 	cursor: pointer;
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 #nav-filter-menu #search-button{
 	background-image:url("../img/search.svg");
@@ -60,11 +61,11 @@ a:hover{
 	width: 41px;
 	height: 41px;
 	margin-top: 5px;
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 #nav-filter-menu #search-button:hover{
 	/*background-color: rgb(255,25,0);*/
-	transition:all 1s ease;
+	transition:all .5s ease;
 }
 #content{
 	background:rgba(21,21,21,.1);
@@ -94,4 +95,9 @@ a:hover{
 	width:100%;
 	cursor: default;
 	font-family: Calibri;
+}
+@media only screen and (max-width : 747px) {
+	#nav-filter-menu{
+		font-size:34px;
+	}
 }
