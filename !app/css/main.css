@@ -16,6 +16,7 @@ a:hover{
 /* MAIN SITE-SECTION */
 #header{
 	-moz-user-select:none;
+	-webkit-user-select:none;
 	-user-select:none;
 	background:rgba(21,21,21,.3);
 	border-bottom:2px solid rgb(30,30,30);
