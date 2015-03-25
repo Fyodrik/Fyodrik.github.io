@@ -9,7 +9,7 @@
 //Обновление состояния
 
 var updateState = function(state){
-	 var sUrlHash;
+	var sUrlHash;
 	if(!state)
 		if(location.hash.slice(1)=="")
 			sUrlHash = null;
@@ -30,7 +30,7 @@ var updateState = function(state){
 		}
 	}
 	if(!err404)
-		location = a;
+		location = a = "https://fyodrik.github.io"+location.pathname.slice(1);
 }
 
 //изменение поля адреса
