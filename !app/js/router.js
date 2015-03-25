@@ -17,13 +17,8 @@ var updateState = function(state){
 			return;
 	else sUrlHash = state.page;
 
-	alert("Update state! = "+sUrlHash);
-
 	for(var i = 0; i<oRouters.List.length; i++){
-		alert(sUrlHash+" ?= "+oRouters.List[i].UrlHash);
-		alert(location.pathname.slice(1)==oRouters.List[i].UrlHash);
 		if(location.pathname.slice(1)==oRouters.List[i].UrlHash){
-			alert("Fined!");
 			if(sCurLoc!=oRouters.List[i].FromLoc){
 				// exit_n();
 			}
@@ -31,7 +26,6 @@ var updateState = function(state){
 				// exit();
 			err404=false;
 			$('#content').load(oRouters.List[i].ContentLink);
-			alert("Update is "+oRouters.List[i].ContentLink);
 			return;
 		}
 	}
@@ -53,7 +47,6 @@ var update = function(){
 	var state ={
 			page:sHashRef
 		};
-	alert(sHashRef);
 	history.pushState(state,'',state.page);
 	updateState(state);
 }
@@ -69,7 +62,6 @@ $('a.nav').bind("click", function(e){
 	var state ={
 		page:e.target.getAttribute("href")
 	}
-	alert("Nav, ref = "+state.page);
 	history.pushState(state,'',state.page);
 	updateState(state);
 	e.preventDefault();
