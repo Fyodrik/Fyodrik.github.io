@@ -34,7 +34,9 @@ var updateState = function(state){
 			return;
 		}
 	}
-	location = a = "https://fyodrik.github.io/"+sUrlHash;
+	var a = "https://fyodrik.github.io/"+sUrlHash;
+	if(location!=a)
+		location = a;
 }
 
 //изменение поля адреса
