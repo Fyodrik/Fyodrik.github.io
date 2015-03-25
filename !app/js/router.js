@@ -38,9 +38,9 @@ window.addEventListener("hashchange", update);
 window.addEventListener("load", update);
 
 domNAV.addEventListener("click", function(e){
-	alert("test");
 	var state;
 	if (e.target.tagName !== 'A') return;
+	alert("NAV!");
 	state ={
 		page:e.target.getAttribute("href")
 	}
