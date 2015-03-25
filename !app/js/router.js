@@ -9,7 +9,7 @@
 var updateState = function(state){
 	if(!state) return;
 	var sUrlHash = state.page;
-	alert("Update state!");
+	alert("Update state! "+sUrlHash);
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			if(sCurLoc!=oRouters.List[i].FromLoc){
