@@ -1,13 +1,16 @@
 //Adaptive
 function adaptiveContentHeight(){
-	if(window.innerHeight-119<=480)
-		$('#content').css({
-			'height':'480px'
-		});
-	else
-		$('#content').css({
-			'height':window.innerHeight-119+'px'
-		});
+    if(window.innerHeight-119<=480)
+        $('#content').css({
+            'height':'480px'
+        });
+    else
+        $('#content').css({
+            'height':window.innerHeight-119+'px'
+        });
+    $('#content').css({
+            'opacity':1
+        });
 }
 
 window.addEventListener("load", adaptiveContentHeight);
