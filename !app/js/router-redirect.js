@@ -3,7 +3,7 @@
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
 		oRouters = data;
-	})
+	});
 })();
 
 (function(){

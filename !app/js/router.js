@@ -5,7 +5,7 @@
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
 		oRouters = data;
-	})
+	});
 })();
 
 var updateState = function(state){
