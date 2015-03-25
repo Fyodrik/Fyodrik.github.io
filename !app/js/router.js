@@ -33,8 +33,8 @@ var update = function(){
 	updateState(state);
 }
 
-window.addEventListener("hashchange", update);
-window.addEventListener("load", update);
+// window.addEventListener("hashchange", update);
+// window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
 	var state ={
