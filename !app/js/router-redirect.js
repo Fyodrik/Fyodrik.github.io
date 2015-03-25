@@ -1,4 +1,4 @@
-function locRedirect(oRouters){
+function locRedirect(){
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sCurLoc==oRouters.List[i].FullLink){
 			document.getElementById('err404Title').innerHTML = "Redirecting...";
@@ -7,6 +7,8 @@ function locRedirect(oRouters){
 		}
 }
 
-$.getJSON("!app/js/routersDB.json",function(data){
-		locRedirect(data)
-	})
+// $.getJSON("!app/js/routersDB.json",function(data){
+// 		locRedirect(data)
+// 	})
+
+locRedirect();
