@@ -1,4 +1,4 @@
-;var oRouters, sCurLoc = location.toString();
+;var oRouters, sCurLoc = location.toString(), hostdomen = "https://fyodrik.github.io/";
 
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
@@ -26,11 +26,13 @@ var updateState = function(state){
 				// exit();
 			err404=false;
 			$('#content').load(oRouters.List[i].ContentLink);
+			//Изменение заголовка
+			document.querySelector('title').innerHTML = document.querySelector('body').querySelector('title').innerHTML;
 			return;
 		}
 	}
 	if(!err404)
-		location = a = "https://fyodrik.github.io/"+location.pathname.slice(1);
+		location = a = hostdomen+location.pathname.slice(1);
 }
 
 //изменение поля адреса
@@ -38,7 +40,7 @@ var updateState = function(state){
 var update = function(){
 	if(err404) return;
 	var sHashRef;
-	if(sCurLoc!= "https://fyodrik.github.io/"&&location.hash.slice(1)==""){
+	if(sCurLoc!= hostdomen && location.hash.slice(1)==""){
 		sHashRef = location.pathname.slice(1);
 	}
 	else{
