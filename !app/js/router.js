@@ -30,7 +30,7 @@ var updateState = function(state){
 		}
 	}
 	if(!err404)
-		location = a = "https://fyodrik.github.io"+location.pathname.slice(1);
+		location = a = "https://fyodrik.github.io/"+location.pathname.slice(1);
 }
 
 //изменение поля адреса
