@@ -18,7 +18,7 @@ a:hover{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
-	background:rgba(21,21,21,.3);
+	/*background:rgba(21,21,21,.3);*/
 	border-bottom:2px solid rgb(30,30,30);
 	height: 50px;
 	width: 100%;
@@ -63,7 +63,6 @@ a:hover{
 	color:rgb(255,25,0);
 }
 #nav-filter-menu #search-button{
-	background-size: cover;
 	width: 41px;
 	height: 41px;
 	margin-top: 5px;
@@ -81,8 +80,7 @@ a:hover{
 	transition:all .5s ease;
 }
 #content{
-	background:rgba(21,21,21,.1);
-	height:500px;
+	height:480px;
 	max-width:100%;
 	overflow-x:hidden;
 	overflow-y:auto;
@@ -100,7 +98,7 @@ a:hover{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
-	background:rgba(21,21,21,.3);
+	/*background:rgba(21,21,21,.3);*/
 	border-top:2px solid rgb(30,30,30);
 	color:#FFF;
 	height: 45px;
