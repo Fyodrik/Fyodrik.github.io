@@ -40,7 +40,6 @@ var update = function(){
 			page:sHashRef
 		};
 	alert(sHashRef);
-	return;
 	history.pushState(state,'',state.page);
 	updateState(state);
 }
