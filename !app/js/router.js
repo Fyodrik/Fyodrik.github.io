@@ -21,6 +21,7 @@ var updateState = function(state){
 
 	for(var i = 0; i<oRouters.List.length; i++){
 		alert(sUrlHash+" ?= "+oRouters.List[i].UrlHash);
+		alert(sUrlHash==oRouters.List[i].UrlHash);
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			alert("Fined!");
 			if(sCurLoc!=oRouters.List[i].FromLoc){
