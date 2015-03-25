@@ -27,7 +27,7 @@ var updateState = function(state){
 			if(sCurLoc!=oRouters.List[i].FromLoc){
 				// exit_n();
 			}
-			else
+			else{}
 				// exit();
 			$('#content').load(oRouters.List[i].ContentLink);
 			alert("Update is "+oRouters.List[i].ContentLink);
