@@ -1,9 +1,9 @@
-;var oRouters, sCurLoc = location.toString();
+var oRouters, sCurLoc = location.toString();
 
 
 function getJSON(){
 	$.getJSON("!app/js/routersDB.json",function(data){
-		oRouters = data;
+		return data;
 	})
 }
 
@@ -28,6 +28,6 @@ function locRedirect(){
 			}
 }
 
-getJSON();
+alert(getJSON());
 alert(sCurLoc==oRouters.List[i].FullLink);
 locRedirect();
