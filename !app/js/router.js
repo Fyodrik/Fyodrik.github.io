@@ -6,6 +6,8 @@
 	});
 })();
 
+//Обновление состояния
+
 var updateState = function(state){
 	if(!state) return;
 	var sUrlHash = state.page;
@@ -20,11 +22,10 @@ var updateState = function(state){
 			$('#content').load(oRouters.List[i].ContentLink,function(){});
 			return;
 		}
-	alert("loc no in DB");
-	location = a = "https://fyodrik.github.io/"+sUrlHash;
+	// location = a = "https://fyodrik.github.io/"+sUrlHash;
 }
 
-window.addEventListener('popstate', function(e){updateState(e.state);});
+//изменение поля адреса
 
 var update = function(){
 	var sHashRef = location.hash.slice(1),
@@ -38,6 +39,10 @@ var update = function(){
 // window.addEventListener("hashchange", update);
 // window.addEventListener("load", update);
 
+
+
+//Ссылки навигации и переходы по истории
+
 $('a.nav').bind("click", function(e){
 	var state ={
 		page:e.target.getAttribute("href")
@@ -47,3 +52,5 @@ $('a.nav').bind("click", function(e){
 	updateState(state);
 	e.preventDefault();
 });
+
+window.addEventListener('popstate', function(e){updateState(e.state);});
