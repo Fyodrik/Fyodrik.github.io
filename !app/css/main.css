@@ -24,7 +24,7 @@ a:hover{
 	width: 100%;
 	cursor: default;
 }
-#title{
+.title{
 	color:#FFF;
 	float:left;
 	font-family:"Freestyle Script";
