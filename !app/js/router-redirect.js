@@ -4,6 +4,7 @@ function locRedirect(oRouters){
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sCurLoc==oRouters.List[i].FullLink){
 			alert("YE!");
+			alert(oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash);
 			// location.href = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
 		}
 }
