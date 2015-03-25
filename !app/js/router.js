@@ -40,8 +40,13 @@ var updateState = function(state){
 //изменение поля адреса
 
 var update = function(){
-	var sHashRef = location.hash.slice(1),
-		state ={
+	if(!err404) return;
+	var sHashRef;
+	if(sCurLoc!= "https://fyodrik.github.io/"&&location.hash.slice(1)=="")
+		sHashRef=location.pathname.slice(1);
+	else
+		sHashRef = location.hash.slice(1);
+	var state ={
 			page:sHashRef
 		};
 	alert(sHashRef);
@@ -49,7 +54,7 @@ var update = function(){
 	updateState(state);
 }
 
-// window.addEventListener("hashchange", update);
+window.addEventListener("hashchange", update);
 window.addEventListener("load", update);
 
 
