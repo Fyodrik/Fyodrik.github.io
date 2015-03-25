@@ -32,12 +32,14 @@ var update = function(){
 		state ={
 			page:sHashRef
 		};
+	alert(sHashRef);
+	return;
 	history.pushState(state,'',state.page);
 	updateState(state);
 }
 
 // window.addEventListener("hashchange", update);
-// window.addEventListener("load", update);
+window.addEventListener("load", update);
 
 
 
