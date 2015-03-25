@@ -6,7 +6,10 @@
 	})
 })();
 
-for(var i = 0; i<oRouters.List.length; i++)
-		if(sCurLoc==oRouters.List[i].FullLink){
-			location = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
-		}
+(function(){
+	for(var i = 0; i<oRouters.List.length; i++)
+			if(sCurLoc==oRouters.List[i].FullLink){
+				alert("YE!");
+				// location = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
+			}
+})();
