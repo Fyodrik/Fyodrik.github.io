@@ -1,6 +1,6 @@
 ;var oRouters,
-	sCurLoc = location.toString(),
-	domNAV= document.querySelector(".nav");
+	 sCurLoc = location.toString(),
+	 domNAV = document.querySelector(".nav");
 
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
@@ -11,7 +11,7 @@
 var updateState = function(state){
 	if(!state) return;
 	var sUrlHash = state.page;
-
+	alert(oRouters.List.length);
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			if(sCurLoc!=oRouters.List[i].FromLoc){

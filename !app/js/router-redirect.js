@@ -1,5 +1,3 @@
-var sCurLoc = location.toString();
-
 function locRedirect(oRouters){
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sCurLoc==oRouters.List[i].FullLink){
