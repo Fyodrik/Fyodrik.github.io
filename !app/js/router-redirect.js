@@ -1,4 +1,4 @@
-;var oRouters, sCurLoc = location.toString(),
+;var oRouters, sCurLoc = location.toString();
 
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
