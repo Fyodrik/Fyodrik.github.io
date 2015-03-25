@@ -1,6 +1,4 @@
-;var oRouters,
-	 sCurLoc = location.toString(),
-	 domNAV = document.querySelectorAll(".nav");
+;var oRouters, sCurLoc = location.toString();
 
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
@@ -37,11 +35,9 @@ var update = function(){
 window.addEventListener("hashchange", update);
 window.addEventListener("load", update);
 
-domNAV.addEventListener("click", function(e){
-	var state;
-	if (e.target.tagName !== 'A') return;
+$('a.nav').bind("click", function(e){
 	alert("NAV!");
-	state ={
+	var state ={
 		page:e.target.getAttribute("href")
 	}
 	history.pushState(state,'',state.page);
