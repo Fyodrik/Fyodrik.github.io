@@ -10,7 +10,11 @@
 
 var updateState = function(state){
 	 var sUrlHash;
-	if(!state) sUrlHash = null;
+	if(!state)
+		if(location.hash.slice(1)=="")
+			sUrlHash = null;
+		else
+			return;
 	else sUrlHash = state.page;
 
 	alert("Update state! = "+sUrlHash);
