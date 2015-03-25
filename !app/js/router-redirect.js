@@ -6,9 +6,7 @@ function locRedirect(oRouters){
 			location = a;
 		}
 }
-
+alert(oRouters.List[0].UrlHash);
 $.getJSON("!app/js/routersDB.json",function(data){
 		locRedirect(data)
 	})
-
-locRedirect();
