@@ -30,6 +30,7 @@ var updateState = function(state){
 			else
 				// exit();
 			$('#content').load(oRouters.List[i].ContentLink);
+			alert("Update is "+oRouters.List[i].ContentLink);
 			return;
 		}
 	}
