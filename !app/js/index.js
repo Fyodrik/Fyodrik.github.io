@@ -16,17 +16,16 @@ function adaptiveContentHeight(){
         });
 }
 
-function CircleMarginTop(){
-            $('#circle').css({
-                'marginTop': ($('#content').height() - $('#circle').height())/2+'px'
-            });
-        }
-        window.addEventListener("load", CircleMarginTop);
-        window.addEventListener("resize", CircleMarginTop);
-
 window.addEventListener("load", adaptiveContentHeight);
 window.addEventListener("resize", adaptiveContentHeight);
 
+function CircleMarginTop(){
+    $('#circle').css({
+        'marginTop': ($('#content').height() - $('#circle').height())/2+'px'
+    });
+}
+window.addEventListener("load", CircleMarginTop);
+window.addEventListener("resize", CircleMarginTop);
 
 // Yandex.Metrika counter
 (function (d, w, c) {
