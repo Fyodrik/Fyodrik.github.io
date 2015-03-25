@@ -4,13 +4,15 @@
                     "UrlHash":"about",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"!content/about/index.html",
-                    "FullLink":"https://fyodrik.github.io/about"
+                    "FullLink":"https://fyodrik.github.io/about",
+                    "Title":"About - Fyodrik"
                 },
                 {
                     "UrlHash":"",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"!content/index.html",
-                    "FullLink":"https://fyodrik.github.io/"
+                    "FullLink":"https://fyodrik.github.io/",
+                    "Title":"Main - Fyodrik"
                 }
             ]
 }

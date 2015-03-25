@@ -25,9 +25,8 @@ var updateState = function(state){
 			else{}
 				// exit();
 			err404=false;
+			document.querySelector('title').innerHTML = oRouters.List[i].Title;
 			$('#content').load(oRouters.List[i].ContentLink);
-			//Изменение заголовка
-			document.querySelector('title').innerHTML = document.querySelector('body').querySelector('title').innerHTML;
 			return;
 		}
 	}
