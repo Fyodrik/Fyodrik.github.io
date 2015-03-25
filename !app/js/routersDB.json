@@ -1,10 +1,10 @@
 {
-	"Project":{
-		"Name":"Territory of Information Techonologies",
-		"AbbName":"TIT",
-		"Tags":["Other",""],
-		"FirstReliaseData":"10.03.2015",
-		"Title":"TitleOfProjectButton",
-		"Content":"<div class=\"ProjectButton\">...</div>"
-	}
+    "List":[
+                {
+                    "UrlHash":"about",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"!content/about/index.html",
+                    "FullLink":"https://fyodrik.github.io/about"
+                }
+            ]
 }

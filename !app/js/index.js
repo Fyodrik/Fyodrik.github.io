@@ -1,5 +1,6 @@
-function update() {
-	if(window.innerHeight-104<=480)
+//Adaptive
+function adaptiveContentHeight(){
+	if(window.innerHeight-119<=480)
 		$('#content').css({
 			'height':'480px'
 		});
@@ -8,9 +9,12 @@ function update() {
 			'height':window.innerHeight-119+'px'
 		});
 }
-update();
-window.addEventListener("resize", update);
-// <!-- Yandex.Metrika counter -->
+
+window.addEventListener("load", adaptiveContentHeight);
+window.addEventListener("resize", adaptiveContentHeight);
+
+
+// Yandex.Metrika counter
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
@@ -34,4 +38,3 @@ window.addEventListener("resize", update);
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
-// <!-- /Yandex.Metrika counter -->

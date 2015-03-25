@@ -50,10 +50,17 @@ a:hover{
 	text-decoration:none;
 	transition:all .5s ease;
 }
+#nav-filter-menu li a{
+	text-decoration:none;
+	color:#FFF;
+}
 #nav-filter-menu li:hover{
 	color:rgb(255,25,0);
 	cursor: pointer;
 	transition:all .5s ease;
+}
+#nav-filter-menu li:hover a{
+	color:rgb(255,25,0);
 }
 #nav-filter-menu #search-button{
 	background-size: cover;
