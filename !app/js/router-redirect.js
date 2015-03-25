@@ -19,6 +19,7 @@
 			alert(oRouters.List[0]);
 			if(sCurLoc==oRouters.List[i].FullLink){
 				alert("YE!");
+				alert(oRouters.List[i].FullLink);
 				// location = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
 			}
 })();
