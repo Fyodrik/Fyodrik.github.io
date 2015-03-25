@@ -18,6 +18,7 @@ var updateState = function(state){
 			else
 				// exit();
 			$('#content').load(oRouters.List[i].ContentLink,function(){});
+			return;
 		}
 }
 
@@ -36,7 +37,6 @@ window.addEventListener("hashchange", update);
 window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
-	alert("NAV!");
 	var state ={
 		page:e.target.getAttribute("href")
 	}
