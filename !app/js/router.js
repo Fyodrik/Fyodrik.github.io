@@ -19,7 +19,7 @@ var updateState = function(state){
 			}
 			else
 				// exit();
-			$('#content').load(oRouters.List[i].ContentLink,function(){});
+			$('#content').load(oRouters.List[i].ContentLink);
 			return;
 		}
 	// location = a = "https://fyodrik.github.io/"+sUrlHash;
