@@ -19,7 +19,7 @@ var updateState = function(state){
 
 	alert("Update state! = "+sUrlHash);
 
-	for(var i = 0; i<oRouters.List.length; i++)
+	for(var i = 0; i<oRouters.List.length; i++){
 		alert(sUrlHash+" ?= "+oRouters.List[i].UrlHash);
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			alert("Fined!");
@@ -31,6 +31,7 @@ var updateState = function(state){
 			$('#content').load(oRouters.List[i].ContentLink);
 			return;
 		}
+	}
 	// location = a = "https://fyodrik.github.io/"+sUrlHash;
 }
 
