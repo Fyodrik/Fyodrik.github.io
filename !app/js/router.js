@@ -1,6 +1,6 @@
 ;var oRouters,
 	 sCurLoc = location.toString(),
-	 domNAV = document.querySelector(".nav");
+	 domNAV = document.getElementsByClassName('nav');
 
 (function(){
 	$.getJSON("!app/js/routersDB.json",function(data){
