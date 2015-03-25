@@ -1,10 +1,10 @@
 html,body{
-	background:rgba(21,21,21,.7);
 	color:#CCC;
 	margin:0 auto;
 	min-width: 677px;
 	padding:0;
 	height: 100%;
+	background:rgb(30,30,30);
 }
 a{
 	color:rgba(255,25,0,.7);
@@ -19,8 +19,8 @@ a:hover{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
-	/*background:rgba(21,21,21,.3);*/
-	border-bottom:2px solid rgb(30,30,30);
+	background:rgb(30,30,30);
+	border-bottom:2px solid rgb(21,21,21);
 	height: 50px;
 	width: 100%;
 	cursor: default;
@@ -81,6 +81,7 @@ a:hover{
 	transition:all .5s ease;
 }
 #content{
+	background:rgb(30,30,30);
 	opacity:0;
 	max-width:100%;
 	overflow-x:hidden;
@@ -106,8 +107,8 @@ a:hover{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
-	/*background:rgba(21,21,21,.3);*/
-	border-top:2px solid rgb(30,30,30);
+	background:rgb(30,30,30);
+	border-top:2px solid rgb(21,21,21);
 	color:#FFF;
 	height: 45px;
 	line-height:40px;
