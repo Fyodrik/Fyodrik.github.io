@@ -29,6 +29,7 @@ var updateState = function(state){
 			}
 			else{}
 				// exit();
+			err404=false;
 			$('#content').load(oRouters.List[i].ContentLink);
 			alert("Update is "+oRouters.List[i].ContentLink);
 			return;
