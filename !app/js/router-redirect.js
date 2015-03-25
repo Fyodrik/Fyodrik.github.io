@@ -1,7 +1,7 @@
 ;var oRouters, sCurLoc = location.toString(),
 
 (function(){
-	$.getJSON("!app/js/routersDB.json",function(data){
+	$.getJSON("https://fyodrik.github.io/!app/js/routersDB.json",function(data){
 		oRouters = data;
 	})
 })();
