@@ -238,5 +238,14 @@
     <script src="!app/js/router.js"></script>
     <script src="!app/js/router-redirect.js"></script>
     <script src="!app/js/nav-filter.js"></script>
+    <script>
+        function CircleMarginTop(){
+            $('#circle').css({
+                'marginTop': ($('#content').height() - $('#circle').height())/2+'px'
+            });
+        }
+        window.addEventListener("load", CircleMarginTop);
+        window.addEventListener("resize", CircleMarginTop);
+    </script>
 </body>
 </html>
