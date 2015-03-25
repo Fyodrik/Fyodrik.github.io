@@ -5,8 +5,9 @@
 		oRouters = data;
 	})
 })();
-alert("!!!!!!!!!");
+
 (function(){
+	alert("!!!!!!!!!");
 	for(var i = 0; i<oRouters.List.length; i++)
 			if(sCurLoc==oRouters.List[i].FullLink){
 				alert("YE!");
