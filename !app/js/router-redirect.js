@@ -1,6 +1,6 @@
 var sCurLoc = location.toString();
 
-document.getElementById('err404Title').innerHTML = "Redirecting..."
+document.getElementById('err404Title').innerHTML = "Redirecting...";
 
 function locRedirect(oRouters){
 	for(var i = 0; i<oRouters.List.length; i++)
