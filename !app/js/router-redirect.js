@@ -5,7 +5,7 @@
 		oRouters = data;
 	})
 })();
-
+alert(sCurLoc==oRouters.List[i].FullLink);
 (function(){
 	alert(oRouters);
 	alert(oRouters.List);
