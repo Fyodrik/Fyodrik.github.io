@@ -34,8 +34,7 @@ var updateState = function(state){
 			return;
 		}
 	}
-	var a = "https://fyodrik.github.io/"+sUrlHash;
-	if(location!=a)
+	if(!err404)
 		location = a;
 }
 
