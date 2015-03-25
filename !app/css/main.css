@@ -81,7 +81,7 @@ a:hover{
 	transition:all .5s ease;
 }
 #content{
-	/*height:80%;*/
+	height:80%;
 	max-width:100%;
 	overflow-x:hidden;
 	overflow-y:auto;
@@ -89,7 +89,7 @@ a:hover{
 	z-index: 1;
 }
 #content::after{
-	content: ".";
+	content: "";
 	display:block;
 	clear:both;
 	height: 0;
