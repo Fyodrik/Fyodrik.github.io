@@ -3,4 +3,3 @@ $.getJSON("!app/js/routersDB.json",function(oRouters){
 			if(sCurLoc==oRouters.List[i].FullLink)
 				location = a = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
 })
-var err = true;

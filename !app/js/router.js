@@ -43,7 +43,7 @@ var update = function(){
 	if(!err404) return;
 	var sHashRef;
 	if(sCurLoc!= "https://fyodrik.github.io/"&&location.hash.slice(1)=="")
-		sHashRef=location.pathname.slice(1);
+		sHashRef = location.pathname.slice(1);
 	else
 		sHashRef = location.hash.slice(1);
 	var state ={
