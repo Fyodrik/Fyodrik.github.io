@@ -5,6 +5,12 @@
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"!content/about/index.html",
                     "FullLink":"https://fyodrik.github.io/about"
+                },
+                {
+                    "UrlHash":"",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"!content/index.html",
+                    "FullLink":"https://fyodrik.github.io/"
                 }
             ]
 }
