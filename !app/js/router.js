@@ -9,7 +9,7 @@
 var updateState = function(state){
 	if(!state) return;
 	var sUrlHash = state.page;
-	alert("Update state! "+sUrlHash);
+	alert("Update state! = "+sUrlHash);
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			if(sCurLoc!=oRouters.List[i].FromLoc){
@@ -20,6 +20,8 @@ var updateState = function(state){
 			$('#content').load(oRouters.List[i].ContentLink,function(){});
 			return;
 		}
+	alert("loc no in DB");
+	location = a = "https://fyodrik.github.io/"+sUrlHash;
 }
 
 window.addEventListener('popstate', function(e){updateState(e.state);});
