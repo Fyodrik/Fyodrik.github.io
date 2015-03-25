@@ -30,6 +30,7 @@ var updateState = function(state){
 			return;
 		}
 	}
+	alert("qwe!");
 	if(!err404)
 		location = a = hostdomen+location.pathname.slice(1);
 }
