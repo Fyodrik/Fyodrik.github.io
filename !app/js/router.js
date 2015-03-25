@@ -9,7 +9,7 @@
 var updateState = function(state){
 	if(!state) return;
 	var sUrlHash = state.page;
-	alert(oRouters.List.length);
+	alert("Update state!");
 	for(var i = 0; i<oRouters.List.length; i++)
 		if(sUrlHash==oRouters.List[i].UrlHash){
 			if(sCurLoc!=oRouters.List[i].FromLoc){
@@ -40,6 +40,7 @@ $('a.nav').bind("click", function(e){
 	var state ={
 		page:e.target.getAttribute("href")
 	}
+	alert("Nav, ref = "+state.page);
 	history.pushState(state,'',state.page);
 	updateState(state);
 	e.preventDefault();
