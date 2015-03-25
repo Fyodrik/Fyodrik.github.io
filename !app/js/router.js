@@ -9,7 +9,7 @@
 //Обновление состояния
 
 var updateState = function(state){
-	if(!state) return;
+	// if(!state) return;
 	var sUrlHash = state.page;
 	alert("Update state! = "+sUrlHash);
 	for(var i = 0; i<oRouters.List.length; i++)
