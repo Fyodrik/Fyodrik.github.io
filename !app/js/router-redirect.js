@@ -3,6 +3,6 @@ $.getJSON("!app/js/routersDB.json",function(oRouters){
 			if(sCurLoc==oRouters.List[i].FullLink){
 				document.getElementById('err404Title').innerHTML = "Redirecting...";
 				var a = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
-				location = a;
+				location = (oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash).toString;
 			}
 	})
