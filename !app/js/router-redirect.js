@@ -28,6 +28,6 @@ function locRedirect(){
 			}
 }
 
-alert(getJSON());
+alert(getJSON());a
 alert(sCurLoc==oRouters.List[i].FullLink);
 locRedirect();
