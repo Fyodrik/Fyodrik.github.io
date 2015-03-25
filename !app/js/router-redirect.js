@@ -2,8 +2,9 @@ var sCurLoc = location.toString();
 
 function locRedirect(oRouters){
 	for(var i = 0; i<oRouters.List.length; i++)
-		alert(sCurLoc==oRouters.List[i].FullLink);
-		if(sCurLoc==oRouters.List[i].FullLin){
+		b = sCurLoc==oRouters.List[i].FullLink;
+		alert(b);
+		if(b){
 			alert("YE!");
 			// location.href = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
 		}
