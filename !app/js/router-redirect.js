@@ -1,12 +1,14 @@
 ;var oRouters, sCurLoc = location.toString();
 
-(function(){
+
+function getJSON(){
 	$.getJSON("!app/js/routersDB.json",function(data){
 		oRouters = data;
 	})
-})();
-alert(sCurLoc==oRouters.List[i].FullLink);
-(function(){
+}
+
+
+function locRedirect(){
 	alert(oRouters);
 	alert(oRouters.List);
 	alert(oRouters.List.length);
@@ -24,4 +26,8 @@ alert(sCurLoc==oRouters.List[i].FullLink);
 				alert(oRouters.List[i].FullLink);
 				// location = oRouters.List[i].FromLoc+"#"+oRouters.List[i].UrlHash;
 			}
-})();
+}
+
+getJSON();
+alert(sCurLoc==oRouters.List[i].FullLink);
+locRedirect();
