@@ -31,7 +31,7 @@ var updateState = function(state){
 					return;
 				}
 			}
-		else;
+		else{}
 	}while(!oRouters)
 	alert("qwe!");
 	if(!err404)
