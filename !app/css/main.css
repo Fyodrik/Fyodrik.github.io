@@ -81,7 +81,11 @@ a:hover{
 	transition:all .5s ease;
 }
 #content{
-	background:rgb(30,30,30);
+	/*background:rgb(30,30,30);*/
+	background-image: url(../img/4.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat;
+	
 	opacity:0;
 	max-width:100%;
 	overflow-x:hidden;
