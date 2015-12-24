@@ -25,16 +25,6 @@ a:hover{
 	width: 100%;
 	cursor: default;
 }
-	.title{
-		color:#FFF;
-		float:left;
-		font-family:"Freestyle Script";
-		font-size:43px;
-		line-height: 50px;
-		margin: 0;
-		text-align: left;
-	}
-
 	#nav-filter-menu{
 		color:#FFF;
 		font-family:"Freestyle Script";
