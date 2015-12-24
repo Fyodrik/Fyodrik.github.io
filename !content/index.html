@@ -4,18 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Main - Fyodrik</title>
 	<style>
+		body{
+			background-image:url(../!app/img/bg.jpg);
+			background-size: 100%;
+		}
+		#wrap-photo{
+			background-color: rgba(0,0,0,0.5);
+			border-radius:50%;
+			width: 344px;
+			height: 344px;
+			float:left;
+		}
 		#photo{
-			background-image: url(/!content/about/i.png);
+			background-image: url(i.png);
 			background-size: 100%;
 			width: 300px;
 			height: 300px;
 			border-radius: 50%;
-			float:left;
-			border:solid 10px rgba(0,0,0,.3);
+			margin: 20px;
+			border: 2px solid rgb(21,21,21);
 		}
 		#text{
 			float:left;
 			background-color: rgba(0,0,0,.3);
+			color: #FFF;
+			width: 50%;
 			border-radius:15px;
 			padding: 15px;
 			font-family: "Calibri", Arial;
@@ -23,7 +36,18 @@
 	</style>
 </head>
 <body>
-	<div id="photo"></div>
+	<div id="wrap-photo">
+		<div id="photo"></div>
+	</div>
 	<div id="text">Привет! Я Дмитрий, занимаюсь технологиями (в большинстве ИТ) и контентом. Это мой сайт-портфолио, здесь я выкладываю свои работы, которые включают в себя как проекты, так и статьи по данным темам.</div>
+	<script>
+	    function CircleMarginTop(){
+	        $('#wrap-photo').css({
+	            'marginTop': ($('#content').height() - $('#wrap-photo').height())/2+'px'
+	        });
+	    }
+	    window.addEventListener("load", CircleMarginTop);
+	    window.addEventListener("resize", CircleMarginTop);
+	</script>
 </body>
 </html>
