@@ -55,7 +55,7 @@ a:hover{
 			color:rgb(255,25,0);
 		}
 #content{
-	/*background:rgb(30,30,30);*/
+	background:#BDB2AC;
 	background-image: url(../img/bg.jpg);
 	background-size: 100%;
 	background-repeat:no-repeat;
