@@ -55,7 +55,6 @@ a:hover{
 			color:rgb(255,25,0);
 		}
 #content{
-	background:#BDB2AC;
 	background-image: url(../img/bg.jpg);
 	background-size: 100%;
 	background-repeat:no-repeat;
@@ -99,5 +98,8 @@ a:hover{
 		color:white;
 		text-decoration: none;
 	}
-@media only screen and (max-width : 747px) {
+@media only screen and (max-width : 790px) {
+	#content{
+		background-size: 0 100%;
+	}
 }
