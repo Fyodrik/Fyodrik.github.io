@@ -56,7 +56,7 @@ a:hover{
 		}
 #content{
 	background-image: url(../img/bg.jpg);
-	background-size: 100%;
+	background-size:cover;
 	background-repeat:no-repeat;
 	
 	opacity:0;
@@ -99,7 +99,7 @@ a:hover{
 		text-decoration: none;
 	}
 @media only screen and (max-width : 790px) {
-	#content{
-		background-size: 0 100%;
-	}
+/*	#content{
+		background-size:auto;
+	}*/
 }
