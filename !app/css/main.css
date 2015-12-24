@@ -110,8 +110,8 @@ a:hover{
 	font-family: Calibri;
 }
 	#footer a{
-	color:white;
-	text-decoration: none;
+		color:white;
+		text-decoration: none;
 	}
 @media only screen and (max-width : 747px) {
 	#nav-filter-menu{
