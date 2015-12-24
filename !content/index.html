@@ -37,11 +37,11 @@
 	</div>
 	<div id="text">Привет! Я Дмитрий, занимаюсь технологиями (в большинстве ИТ) и контентом. Это мой сайт-портфолио, здесь я выкладываю свои работы, которые включают в себя как проекты, так и статьи по данным темам.</div>
 	<script>
-	    function CircleMarginTop(){
+	    (function CircleMarginTop(){
 	        $('#wrap-photo').css({
 	            'marginTop': ($('#content').height() - $('#wrap-photo').height())/2+'px'
 	        });
-	    }();
+	    })();
 	    window.addEventListener("load", CircleMarginTop);
 	    window.addEventListener("resize", CircleMarginTop);
 	</script>
