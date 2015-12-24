@@ -100,7 +100,4 @@ a:hover{
 		text-decoration: none;
 	}
 @media only screen and (max-width : 747px) {
-	#nav-filter-menu{
-		font-size:34px;
-	}
 }
