@@ -38,13 +38,9 @@ a:hover{
 	#nav-filter-menu{
 		color:#FFF;
 		font-family:"Freestyle Script";
-		font-size: 40px;
-		line-height: 50px;
-		width:400px;
-		height:400px;
-		position: absolute;
-		left:500px;
-		z-index:1000;
+		font-size:40px;
+		line-height:50px;
+		width:300px;
 		margin:0 auto;
 		padding:0;
 		list-style:none;
