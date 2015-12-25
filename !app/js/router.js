@@ -20,17 +20,18 @@ var updateState = function(state){
 		if(oRouters)
 			for(var i = 0; i<oRouters.List.length; i++){
 				if(location.pathname.slice(1)==oRouters.List[i].UrlHash){
-					/*if(sCurLoc!=oRouters.List[i].FromLoc){
+					if(sCurLoc!=oRouters.List[i].FromLoc){
 						// exit_n();
 					}
 					else{}
-						// exit();*/
+						// exit();
 					err404=false;
 					document.querySelector('title').innerHTML = oRouters.List[i].Title;
 					$('#content').load(oRouters.List[i].ContentLink);
 					return;
 				}
 			}
+		else{}
 	}while(!oRouters)
 	if(!err404)
 		location = a = hostdomen+location.pathname.slice(1);
