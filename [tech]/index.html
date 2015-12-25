@@ -16,10 +16,13 @@
 			background-color: rgba(255,25,0,.7);
 			transition:all .5s ease;
 		}
+		#nav-container{
+			margin:0 auto;
+		}
 	</style>
 </head>
 <body>
-	<div style="margin:0 auto;width:82%;">
+	<div id="nav-container">
 		<div class="button">Test Project Button</div>
 		<div class="button">Test Project Button</div>
 		<div class="button">Test Project Button</div>
@@ -30,5 +33,14 @@
 		<div class="button">Test Project Button</div>
 		<div class="button">Test Project Button</div>
 	</div>
+	<script>
+	    (function MarginCenter(){
+	        $('#nav-container').css({
+	            'width': parseInt(window.innerWidth/368)*368+'px'
+	        });
+	    })();
+	    window.addEventListener("load", MarginCenter);
+	    window.addEventListener("resize", MarginCenter);
+	</script>
 </body>
 </html>
