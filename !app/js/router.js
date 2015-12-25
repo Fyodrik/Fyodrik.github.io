@@ -1,10 +1,6 @@
 ;var oRouters, sCurLoc = location.toString(), hostdomen = "https://fyodrik.github.io/";
 
-(function(){
-	$.getJSON("!app/js/routersDB.json",function(data){
-		oRouters = data;
-	});
-})();
+
 
 //Обновление состояния
 
@@ -17,6 +13,11 @@ var updateState = function(state){
 			return;
 	else sUrlHash = state.page;
 	do{
+		(function(){
+			$.getJSON("!app/js/routersDB.json",function(data){
+				oRouters = data;
+			});
+		})();
 		if(oRouters)
 			for(var i = 0; i<oRouters.List.length; i++){
 				if(location.pathname.slice(1)==oRouters.List[i].UrlHash){
