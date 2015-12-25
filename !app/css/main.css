@@ -1,7 +1,7 @@
 html,body{
 	color:#CCC;
 	margin:0 auto;
-	min-width: 360px;
+	min-width: 768px; /*min=360*/
 	padding:0;
 	height: 100%;
 	background:rgb(30,30,30);
