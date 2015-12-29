@@ -1,39 +1,37 @@
-;var oRouters, sCurLoc = location.toString(), hostdomen = "https://fyodrik.github.io/";
-
-(function(){
-	$.getJSON("!app/js/routersDB.json",function(data){
-		oRouters = data;
-	});
-})();
+// (C) 2015 Dmitry Fyodorov (aka Fyodrik)
+// Router.js - браузерная маршрутизация для AJAX-подзагрузки
+// Венгерская нотация
+; var strCurLoc = location.toString(), strSiteDomen = "https://fyodrik.github.io/";
 
 //Обновление состояния
 
 var updateState = function(state){
-	var sUrlHash;
+	var strUrlHash;
+	//Проверка на якорь
 	if(!state)
 		if(location.hash.slice(1)=="")
-			sUrlHash = null;
+			strUrlHash = null;
 		else
 			return;
-	else sUrlHash = state.page;
-	do{
-		if(oRouters)
-			for(var i = 0; i<oRouters.List.length; i++){
-				if(location.pathname.slice(1)==oRouters.List[i].UrlHash){
-					/*if(sCurLoc!=oRouters.List[i].FromLoc){
-						// exit_n();
-					}
-					else{}
-						// exit();
-					err404=false;*/
-					document.querySelector('title').innerHTML = oRouters.List[i].Title;
-					$('#content').load(oRouters.List[i].ContentLink);
-					return;
+	else strUrlHash = state.page;
+	//Проход по таблице маршрутизации
+	$.getJSON("!app/js/routersDB.json", function(jsonRouters){
+		for(var i = 0; i<jsonRouters.List.length; i++)
+			if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){
+				/*if(strCurLoc!=jsonRouters.List[i].FromLoc){
+					// exit_n();
 				}
+				else{}
+					// exit();
+				err404=false;*/
+				document.querySelector('title').innerHTML = jsonRouters.List[i].Title;
+				$('#content').load(jsonRouters.List[i].ContentLink);
+				return;return;
 			}
-	}while(!oRouters)
+	});
+	//
 	if(!err404)
-		location = a = hostdomen+location.pathname.slice(1);
+		location = a = strSiteDomen+location.pathname.slice(1);
 }
 
 //изменение поля адреса
@@ -41,15 +39,14 @@ var updateState = function(state){
 var update = function(){
 	if(err404) return;
 	var sHashRef;
-	if(sCurLoc!= hostdomen && location.hash.slice(1)==""){
+	//Проверка на якорь
+	if(strCurLoc!= strSiteDomen && location.hash.slice(1)=="")
 		sHashRef = location.pathname.slice(1);
-	}
-	else{
+	else
 		sHashRef = location.hash.slice(1);
-	}
-	var state ={
-			page:sHashRef
-		};
+	var state = {
+		page:sHashRef;
+	};
 	history.pushState(state,'',state.page);
 	updateState(state);
 }
@@ -62,9 +59,9 @@ window.addEventListener("load", update);
 //Ссылки навигации и переходы по истории
 
 $('a.nav').bind("click", function(e){
-	var state ={
-		page:e.target.getAttribute("href")
-	}
+	var state =	{
+		page: e.target.getAttribute("href");
+	};
 	history.pushState(state,'',state.page);
 	updateState(state);
 	e.preventDefault();
