@@ -203,7 +203,7 @@ var updateState = function(state){
       -o-animation-delay: 1s;
       animation-delay: 1s;
     }
-     </style> <div class='uil-ripple-css' style='transform:scale(1);'><div></div><div></div></div>
+     </style> <div id='loading' class='uil-ripple-css' style='transform:scale(1);'><div></div><div></div></div>
 
     ";
     (LoadingMarginTop = function(){
