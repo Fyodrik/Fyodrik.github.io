@@ -25,8 +25,8 @@ var updateState = function(state){
                     // exit();*/
                 document.querySelector('title').innerHTML = jsonRouters.List[i].Title;
                 $('#content').css({
-                    'filter': 'grayscale(0%)';
-                    '-webkitFilter':'grayscale(0%)';
+                    'filter': 'grayscale(0%)',
+                    '-webkitFilter':'grayscale(0%)'
                 });
                 $('#content').load(jsonRouters.List[i].ContentLink);
             }
