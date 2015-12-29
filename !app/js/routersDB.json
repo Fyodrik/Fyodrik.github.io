@@ -8,6 +8,13 @@
                     "Title":"Main - Fyodrik"
                 },
                 {
+                    "UrlHash":"about",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"!content/index.html",
+                    "FullLink":"https://fyodrik.github.io/",
+                    "Title":"Main - Fyodrik"
+                },
+                {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/index.html",
