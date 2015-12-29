@@ -22,25 +22,17 @@ var updateState = function(state){
 					// exit_n();
 				}
 				else{}
-					// exit();
-				err404=false;*/
+					// exit();*/
 				document.querySelector('title').innerHTML = jsonRouters.List[i].Title;
 				$('#content').load(jsonRouters.List[i].ContentLink);
 				return;return;
 			}
 	});
-	//
-	if(!err404)
-		location = a = strSiteDomen+location.pathname.slice(1);
 }
 
 //изменение поля адреса
 
 var update = function(){
-	if(err404){
-		updateState(state);
-		return;
-	} 
 	var sHashRef;
 	//Проверка на якорь
 	if(strCurLoc!= strSiteDomen && location.hash.slice(1)=="")
