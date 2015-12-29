@@ -1,4 +1,3 @@
-;
 (A = function(){
     $('#nav-container').css({
         'width': parseInt(window.innerWidth/398)*398+'px'
