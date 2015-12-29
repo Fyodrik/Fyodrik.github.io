@@ -193,17 +193,17 @@
     -o-animation-delay: 1s;
     animation-delay: 1s;
 }
- </style>
- <div class='uil-ripple-css' style='transform:scale(1);'>
+</style>
+<div id="loading" class='uil-ripple-css' style='transform:scale(1);'>
     <div></div>
     <div></div>
 </div>
- <script>
- (LoadingMarginTop = function(){
-     $('#loading').css({
-         'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
-     });
- })();
- window.addEventListener("load", LoadingMarginTop);
- window.addEventListener("resize", LoadingMarginTop);
- </script>
+<script>
+    (LoadingMarginTop = function(){
+        $('#loading').css({
+            'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
+        });
+    })();
+    window.addEventListener("load", LoadingMarginTop);
+    window.addEventListener("resize", LoadingMarginTop);
+</script>
