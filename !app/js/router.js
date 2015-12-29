@@ -37,7 +37,10 @@ var updateState = function(state){
 //изменение поля адреса
 
 var update = function(){
-	if(err404) return;
+	if(err404){
+		updateState(state);
+		return;
+	} 
 	var sHashRef;
 	//Проверка на якорь
 	if(strCurLoc!= strSiteDomen && location.hash.slice(1)=="")
