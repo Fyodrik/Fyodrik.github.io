@@ -8,13 +8,6 @@
 var updateState = function(state){
     //AJAx LOADING
     $('#content').load("!app/img/loading.html");
-    (LoadingMarginTop = function(){
-        $('#loading').css({
-            'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
-        });
-    })();
-    window.addEventListener("load", LoadingMarginTop);
-    window.addEventListener("resize", LoadingMarginTop);
 
     var strUrlHash;
     //Проверка на якорь
