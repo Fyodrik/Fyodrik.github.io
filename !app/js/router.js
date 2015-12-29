@@ -6,7 +6,16 @@
 //Обновление состояния
 
 var updateState = function(state){
-    document.getElementById('content').innerHTML = '<img src="!app/img/loading.gif">';
+    //AJAx LOADING
+        document.getElementById('content').innerHTML = '<img id="loading" style="margin:0 auto;" src="!app/img/loading.gif">';
+        (LoadingMarginTop = function(){
+            $('#loading').css({
+                'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
+            });
+        })();
+        window.addEventListener("load", LoadingMarginTop);
+        window.addEventListener("resize", LoadingMarginTop);
+
     var strUrlHash;
     //Проверка на якорь
     if(!state)
@@ -16,7 +25,7 @@ var updateState = function(state){
             return;
     else strUrlHash = state.page;
     //Проход по таблице маршрутизации
-/*    $.getJSON("!app/js/routersDB.json", function(jsonRouters){
+    $.getJSON("!app/js/routersDB.json", function(jsonRouters){
         for(var i = 0; i<jsonRouters.List.length; i++)
             if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){
                 //if(strCurLoc!=jsonRouters.List[i].FromLoc){
@@ -31,7 +40,7 @@ var updateState = function(state){
                 });
                 $('#content').load(jsonRouters.List[i].ContentLink);
             }
-    });*/
+    });
 }
 
 //изменение поля адреса
