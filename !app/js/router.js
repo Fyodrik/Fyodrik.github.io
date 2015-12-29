@@ -33,14 +33,14 @@ var updateState = function(state){
 //изменение поля адреса
 
 var update = function(){
-	var sHashRef;
+	var strHashRef;
 	//Проверка на якорь
 	if(strCurLoc!= strSiteDomen && location.hash.slice(1)=="")
-		sHashRef = location.pathname.slice(1);
+		strHashRef = location.pathname.slice(1);
 	else
-		sHashRef = location.hash.slice(1);
+		strHashRef = location.hash.slice(1);
 	var state = {
-		page:sHashRef;
+		page:strHashRef
 	};
 	history.pushState(state,'',state.page);
 	updateState(state);
@@ -55,7 +55,7 @@ window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
 	var state =	{
-		page: e.target.getAttribute("href");
+		page: e.target.getAttribute("href")
 	};
 	history.pushState(state,'',state.page);
 	updateState(state);
