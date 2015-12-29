@@ -25,7 +25,7 @@ var updateState = function(state){
             return;
     else strUrlHash = state.page;
     //Проход по таблице маршрутизации
-    $.getJSON("!app/js/routersDB.json", function(jsonRouters){
+/*    $.getJSON("!app/js/routersDB.json", function(jsonRouters){
         for(var i = 0; i<jsonRouters.List.length; i++)
             if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){
                 //if(strCurLoc!=jsonRouters.List[i].FromLoc){
@@ -40,7 +40,7 @@ var updateState = function(state){
                 });
                 $('#content').load(jsonRouters.List[i].ContentLink);
             }
-    });
+    });*/
 }
 
 //изменение поля адреса
