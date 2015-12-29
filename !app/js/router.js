@@ -25,7 +25,7 @@ var updateState = function(state){
 					// exit();*/
 				document.querySelector('title').innerHTML = jsonRouters.List[i].Title;
 				$('#content').load(jsonRouters.List[i].ContentLink);
-				return;return;
+				return;
 			}
 	});
 }
