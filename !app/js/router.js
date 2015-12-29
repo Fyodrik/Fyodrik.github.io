@@ -7,14 +7,14 @@
 
 var updateState = function(state){
     //AJAx LOADING
-        document.getElementById('content').innerHTML = '<img id="loading" style="margin:0 auto;" src="!app/img/loading.gif">';
-        (LoadingMarginTop = function(){
-            $('#loading').css({
-                'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
-            });
-        })();
-        window.addEventListener("load", LoadingMarginTop);
-        window.addEventListener("resize", LoadingMarginTop);
+    document.getElementById('content').innerHTML = '<img id="loading" style="display:block; margin:0 auto;" src="!app/img/loading.gif">';
+    (LoadingMarginTop = function(){
+        $('#loading').css({
+            'marginTop': ($('#content').height() - $('#loading').height())/2+'px'
+        });
+    })();
+    window.addEventListener("load", LoadingMarginTop);
+    window.addEventListener("resize", LoadingMarginTop);
 
     var strUrlHash;
     //Проверка на якорь
