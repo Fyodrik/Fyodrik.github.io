@@ -6,7 +6,7 @@
 //Обновление состояния
 
 var updateState = function(state){
-    $('#content').innerHTML = '<img src="!app/img/loading.gif">';
+    document.getElementById('content').innerHTML = '<img src="!app/img/loading.gif">';
     var strUrlHash;
     //Проверка на якорь
     if(!state)
