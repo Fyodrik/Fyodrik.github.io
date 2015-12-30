@@ -72,12 +72,11 @@ a:hover{
 		.nav-focus{
 			color:rgba(255,25,0,1) !important;
 		}
-#container{
+#content{
 	background-image: url(../img/bg.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
-}
-#content{
+	
 	opacity:0;
 	max-width:100%;
 	overflow-x:hidden;
