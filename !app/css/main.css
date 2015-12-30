@@ -24,6 +24,8 @@ a:hover{
 	height: 50px;
 	width: 100%;
 	cursor: default;
+	font-size:40px;
+	font-family:"Freestyle Script";
 }
 	#header a{
 		color:white;
@@ -41,8 +43,6 @@ a:hover{
 	/* NAVIGATION */
 	#nav-filter-menu{
 		color:#FFF;
-		font-family:"Freestyle Script";
-		font-size:40px;
 		line-height:50px;
 		width:300px;
 		margin:0 auto;
