@@ -59,7 +59,12 @@ window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
     id = e.target.getAttribute("href");
-    $('#'+id).addClass('focus');
+    $('a.nav').css({
+       'color': '#FFF'
+    });
+    $('#'+id).css({
+       'color': 'rgb(255,25,0)'
+    });
     var state = {
         page: id
     };
