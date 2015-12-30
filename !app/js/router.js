@@ -37,7 +37,7 @@ var updateState = function(state){
                     'filter': 'grayscale(0%)',
                     '-webkitFilter':'grayscale(0%)'
                 });
-                $('#content').load(jsonRouters.List[i].ContentLink);
+                $('#content').load(jsonRouters.List[i].FromLoc+jsonRouters.List[i].ContentLink);
                 return;
             }
         document.querySelector('title').innerHTML = "404 Error";
