@@ -22,17 +22,17 @@
                     "Title":"Test - Fyodrik"
                 },
                 {
+                    "UrlHash":"tech/about",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[tech]/index.html",
+                    "FullLink":"https://fyodrik.github.io/other",
+                    "Title":"Tech - Fyodrik"
+                },
+                {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/index.html",
                     "FullLink":"https://fyodrik.github.io/tech",
-                    "Title":"Tech - Fyodrik"
-                },
-                {
-                    "UrlHash":"tech?1",
-                    "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[tech]/index.html",
-                    "FullLink":"https://fyodrik.github.io/other",
                     "Title":"Tech - Fyodrik"
                 },
                 {
