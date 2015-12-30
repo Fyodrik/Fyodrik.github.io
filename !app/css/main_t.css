@@ -49,6 +49,7 @@ a:hover{
 		line-height:50px;
 		width:300px;
 		float:right;
+		margin-right:100px;
 		padding:0;
 		list-style:none;
 	}
