@@ -10,8 +10,8 @@
         <meta name="keywords" content="Fyodrik, IT, Technologies, Sound, Music, Graphics, Video, Projects, Audial, Visual, Tech">
         <meta name="author" content="Fyodrik (Dmitry Fyodorov)">
     <!-- STYLES & CONTENT  -->
-        <link rel="shortcut icon" href='http://fyodrik.github.io/!app/img/favicon.ico'>
-        <link rel="stylesheet" href="http://fyodrik.github.io/!app/css/main.css">
+        <link rel="shortcut icon" href='https://fyodrik.github.io/!app/img/favicon.ico'>
+        <link rel="stylesheet" href="https://fyodrik.github.io/!app/css/main.css">
 </head>
 <body>
     <!--CONTENT-->
@@ -123,18 +123,18 @@
             // window.addEventListener("hashchange", update);
             // window.addEventListener("load", update);
 
-            // //Ссылки навигации и переходы по истории
+            //Ссылки навигации и переходы по истории
 
-            // $('a.nav').bind("click", function(e){
-            //     var state = {
-            //         page: e.target.getAttribute("href")
-            //     };
-            //     history.pushState(state,'',state.page);
-            //     updateState(state);
-            //     e.preventDefault();
-            // });
+            $('a.nav').bind("click", function(e){
+                var state = {
+                    page: e.target.getAttribute("href")
+                };
+                history.pushState(state,'',state.page);
+                updateState(state);
+                e.preventDefault();
+            });
 
-            // window.addEventListener('popstate', function(e){updateState(e.state);});
+            window.addEventListener('popstate', function(e){updateState(e.state);});
         </script>
 </body>
 </html>
