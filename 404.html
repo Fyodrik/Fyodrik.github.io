@@ -17,9 +17,7 @@
     <!--CONTENT-->
         <div id="header">
             <div style="float:left;">
-                <span style="background:rgb(255,25,0);">
-                    <a class="nav" href="about">Dmitry Fyodorov (aka Fyodrik)</a>
-                </span>
+                    <a class="nav" href="about" style="font-weight: bold;background:rgb(255,25,0);"> &nbsp; Dmitry Fyodorov (aka Fyodrik)</a>
             </div>
             <ul id="nav-filter-menu">
                 <li><a id="tech" class="nav" href="tech">Tech</a></li>
@@ -28,7 +26,7 @@
                 <li><a id="other" class="nav" href="other">Other</a></li>
             </ul>
         </div>
-        <div id="content">
+        <div id="content" style="filter:grayscale(100%);-webkit-filter:grayscale(100%)">
             <h1 class="title" style="text-align:center;width:100%;">Error 404. This resource is not available on the site.</h1>
         </div>
     <!--SCRIPTS-->
@@ -36,7 +34,24 @@
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="!app/js/index.js"></script>
+        <script>
+            function adaptiveContentHeight(){
+                if(window.innerHeight-56<=480)
+                    $('#content').css({
+                        'height':'480px'
+                    });
+                else
+                    $('#content').css({
+                        'height':window.innerHeight-57+'px'
+                    });
+                $('#content').css({
+                        'opacity':1
+                    });
+            }
+
+            window.addEventListener("load", adaptiveContentHeight);
+            window.addEventListener("resize", adaptiveContentHeight);
+        </script>
         <script src="!app/js/router.js"></script>
 </body>
 </html>

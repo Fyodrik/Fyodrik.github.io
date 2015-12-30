@@ -38,7 +38,9 @@ var updateState = function(state){
                     '-webkitFilter':'grayscale(0%)'
                 });
                 $('#content').load(jsonRouters.List[i].ContentLink);
+                return;
             }
+        document.querySelector('title').innerHTML = "404 Error";
     });
 }
 
