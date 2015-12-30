@@ -99,6 +99,6 @@ html,body{
 	}
 @media only screen and (max-width : 790px) {
 	body{
-		background-position:auto;
+		background-position:top;
 	}
 }
