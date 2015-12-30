@@ -25,9 +25,9 @@ html,body{
 	-user-select:none;
 	background: rgb(30,30,30);
 	height: 52px;
-	line-height:50px;
+	line-height:52px;
 	cursor: default;
-	font-size:40px;
+	font-size:45px;
 	font-family:"Freestyle Script";
 }
 	#header a{
@@ -46,7 +46,7 @@ html,body{
 	#nav-filter-menu{
 		color:#FFF;
 		line-height:50px;
-		width:300px;
+		width:327px;
 		float:right;
 		margin: 0 auto;
 		padding:0;
