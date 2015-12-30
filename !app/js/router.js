@@ -58,10 +58,10 @@ window.addEventListener("load", update);
 //Ссылки навигации и переходы по истории
 
 $('a.nav').bind("click", function(e){
-    document.querySelector('title').removeClass('focus');
-    e.addClass('focus');
+    id = e.target.getAttribute("href");
+    $('#'+id).addClass('focus');
     var state = {
-        page: e.target.getAttribute("href")
+        page: id
     };
     history.pushState(state,'',state.page);
     updateState(state);
