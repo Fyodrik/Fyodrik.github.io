@@ -66,10 +66,13 @@ a:hover{
 		.nav-focus{
 			color:rgba(255,25,0,1) !important;
 		}
-#content{
+#container{
 	background-image: url(../img/bg.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
+}
+#content{
+	
 	
 	opacity:0;
 	max-width:100%;
@@ -95,8 +98,6 @@ a:hover{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
-	background:rgb(30,30,30);
-	border-top:2px solid rgb(21,21,21);
 	color:#FFF;
 	height: 25px;
 	line-height:25px;
