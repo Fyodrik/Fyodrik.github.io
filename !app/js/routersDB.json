@@ -29,6 +29,13 @@
                     "Title":"Tech - Fyodrik"
                 },
                 {
+                    "UrlHash":"tech/1",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[tech]/index.html",
+                    "FullLink":"https://fyodrik.github.io/other",
+                    "Title":"Tech - Fyodrik"
+                },
+                {
                     "UrlHash":"audial",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[audial]/index.html",
