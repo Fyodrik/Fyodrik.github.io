@@ -23,6 +23,7 @@ html,body{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	-user-select:none;
+	background: rgb(30,30,30);
 	padding: 10px;
 	height: 52px;
 	line-height:50px;
