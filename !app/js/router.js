@@ -8,9 +8,9 @@
 var updateState = function(state){
 
     var strUrlHash = state.page;
-    //Выделение пункта меню
-    $('#nav-filter-menu li a').removeClass("nav-focus");
-    $('#'+state.page).addClass("nav-focus");
+    // //Выделение пункта меню
+    // $('#nav-filter-menu li a').removeClass("nav-focus");
+    // $('#'+state.page).addClass("nav-focus");
     
     //AJAx LOADING
     $('#content').load("!app/loading.html");
