@@ -11,9 +11,6 @@ function adaptiveContentHeight(){
     $('#content').css({
             'opacity':1
         });
-    $('#footer').css({
-            'opacity':1
-        });
 }
 
 window.addEventListener("load", adaptiveContentHeight);
