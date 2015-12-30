@@ -32,7 +32,24 @@
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script src="!app/js/index.js"></script>
+        <script>
+            function adaptiveContentHeight(){
+                if(window.innerHeight-74<=480)
+                    $('#content').css({
+                        'height':'480px'
+                    });
+                else
+                    $('#content').css({
+                        'height':window.innerHeight-75+'px'
+                    });
+                $('#content').css({
+                        'opacity':1
+                    });
+            }
+
+            window.addEventListener("load", adaptiveContentHeight);
+            window.addEventListener("resize", adaptiveContentHeight);
+        </script>
         <script src="!app/js/router.js"></script>
 </body>
 </html>
