@@ -22,6 +22,7 @@ a:hover{
 	background:rgb(30,30,30);
 	border-bottom:2px solid rgb(21,21,21);
 	height: 50px;
+	line-height:50px;
 	width: 100%;
 	cursor: default;
 	font-size:40px;
