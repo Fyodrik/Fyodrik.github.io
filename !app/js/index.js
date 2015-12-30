@@ -1,12 +1,12 @@
 //Adaptive
 function adaptiveContentHeight(){
-    if(window.innerHeight-99<=480)
+    if(window.innerHeight-79<=480)
         $('#content').css({
             'height':'480px'
         });
     else
         $('#content').css({
-            'height':window.innerHeight-80+'px'
+            'height':window.innerHeight-60+'px'
         });
     $('#content').css({
             'opacity':1
