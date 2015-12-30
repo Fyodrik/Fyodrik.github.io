@@ -15,6 +15,13 @@
                     "Title":"Main - Fyodrik"
                 },
                 {
+                    "UrlHash":"test",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"!content/index.html",
+                    "FullLink":"https://fyodrik.github.io/",
+                    "Title":"Test - Fyodrik"
+                },
+                {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/index.html",
