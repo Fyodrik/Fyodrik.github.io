@@ -63,6 +63,9 @@ a:hover{
 		#nav-filter-menu li:hover a{
 			color:rgb(255,25,0);
 		}
+		.focus{
+			color:rgb(255,25,0);
+		}
 #content{
 	background-image: url(../img/bg.jpg);
 	background-size:cover;
