@@ -41,7 +41,7 @@ var updateState = function(state){
                 return;
             }
         document.querySelector('title').innerHTML = "404 Error";
-        $('#body').body({
+        $('#body').css({
             'filter': 'grayscale(100%)',
             '-webkitFilter':'grayscale(100%)'
         });
