@@ -24,7 +24,6 @@ html,body{
 	-webkit-user-select:none;
 	-user-select:none;
 	padding: 10px;
-	border-bottom:2px solid rgb(21,21,21);
 	height: 52px;
 	line-height:50px;
 	cursor: default;
