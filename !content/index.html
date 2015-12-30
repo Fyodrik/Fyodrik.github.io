@@ -13,9 +13,9 @@
         border-radius: 50%;
         margin: 0 auto;
         border: 2px solid rgb(255,25,0);
+        margin-top:20px;
     }
     #text{
-        background-color: rgba(0,0,0,.5);
         color: #FFF;
         width: 50%;
         border-radius:15px;
@@ -24,7 +24,25 @@
         margin: 0 auto;
         font-family: "Freestyle Script";
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
+        text-align: center;
+    }
+    #vk{
+        background: url(!content/vk.png);
+    }
+    #fb{
+        background: url(!content/vk.png);
+    }
+    #tw{
+        background: url(!content/vk.png);
+    }
+    .social{
+        width:48px;
+        height:48px;
+        filter:grayscale(100%);
+    }
+    .social:hover{
+        filter:grayscale(0%);
     }
     @media only screen and (max-width : 768px) {
         #text{
@@ -38,8 +56,8 @@
         IT Developer · Sound Producer · Visual Superviser
     </p>
     <p>
-        <a href="http://vk.com/fy0dr1k">vk.com/fy0dr1k</a>
-        <a href="http://fb.com/fyodrik">fb.com/fyodrik</a>
-        <a href="https://twitter.com/fyodrik">twitter.com/fyodrik</a>
+        <a id="vk" class="social" href="http://vk.com/fy0dr1k"></a>
+        <a id="fb" class="social" href="http://fb.com/fyodrik"></a>
+        <a id="tw" class="social" href="https://twitter.com/fyodrik"></a>
     </p>
 </div>

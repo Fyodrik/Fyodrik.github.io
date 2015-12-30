@@ -76,6 +76,7 @@ html,body{
 			color:rgba(255,25,0,1) !important;
 		}
 #content{
+	background-color: rgba(0,0,0,.5);
 	opacity:0;
 	max-width:100%;
 	overflow-x:hidden;
