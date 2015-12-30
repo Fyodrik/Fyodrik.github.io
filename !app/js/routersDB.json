@@ -29,7 +29,7 @@
                     "Title":"Tech - Fyodrik"
                 },
                 {
-                    "UrlHash":"tech/1",
+                    "UrlHash":"tech?1",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/index.html",
                     "FullLink":"https://fyodrik.github.io/other",
