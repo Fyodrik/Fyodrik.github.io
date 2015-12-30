@@ -12,7 +12,7 @@ var updateState = function(state){
     $('#nav-filter-menu li a').removeClass("nav-focus");
     $('#'+strUrlHash).addClass("nav-focus");
 
-    //AJAx LOADING
+    //AJAX LOADING
     $('#content').load("!app/loading.html");
 
     
