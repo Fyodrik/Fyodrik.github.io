@@ -115,7 +115,6 @@ html,body{
     float:left;
     background-color: rgba(30,30,30,.7);
     border:2px solid rgba(30,30,30,0);
-    transition:color .5s ease;
     display: block;
     font-family: Calibri, Arial;
     text-decoration: none;
@@ -128,7 +127,6 @@ html,body{
 .button:hover{
     background-color: rgba(30,30,30,1);
     color:#FFF;
-    transition:color .5s ease;
 }
 .button-header{
     line-height: 20px;
@@ -139,7 +137,6 @@ html,body{
         float:left;
         font-size: 20px;
         font-weight: bold;
-        transition:color .5s ease;
     }
     .button-data{
         display:block;
@@ -151,7 +148,6 @@ html,body{
     opacity: .5;
 }
 .button:hover .button-title{
-    transition:color .5s ease;
     color: rgb(255,25,0);
 }
 .button:hover .button-content{
