@@ -98,7 +98,7 @@ html,body{
 		text-align: center;
 	}
 @media only screen and (max-width : 790px) {
-	body{
+	html, body{
 		background-position:top;
 	}
 }
