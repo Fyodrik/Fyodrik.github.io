@@ -5,15 +5,15 @@
     <title>Tech - Fyodrik</title>
     <style>
         .button{
-            width: 360px;
             height: 260px;
-            margin: 15px;
             float:left;
             background-color: rgba(0,0,0,.5);
+            opacity: .5;
             transition:all .5s ease;
         }
         .button:hover{
             background-color: rgba(255,25,0,.7);
+            opacity: 1;
             transition:all .5s ease;
         }
         #nav-container{
@@ -36,5 +36,10 @@
         <div class="button">Test Project Button</div>
     </div>
     <script src="!app/js/nav-filter.js"></script>
+    <script>
+    $('.button').css({
+        'width':parseInt(window.innerWidth/3)+'px'
+    })
+    </script>
 </body>
 </html>
