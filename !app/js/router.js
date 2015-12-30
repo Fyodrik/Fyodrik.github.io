@@ -7,20 +7,19 @@
 
 var updateState = function(state){
 
-    var strUrlHash = state.page;
-    // //Выделение пункта меню
     // $('#nav-filter-menu li a').removeClass("nav-focus");
     // $('#'+state.page).addClass("nav-focus");
-    
     //AJAx LOADING
     $('#content').load("!app/loading.html");
 
+    var strUrlHash = state.page;
     //Проверка на якорь
     if(!state)
         if(location.hash.slice(1)=="")
             strUrlHash = null;
         else
             return;
+    else strUrlHash = state.page;
     //Проход по таблице маршрутизации
     $.getJSON("!app/js/routersDB.json", function(jsonRouters){
         for(var i = 0; i<jsonRouters.List.length; i++)
