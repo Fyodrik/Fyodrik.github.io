@@ -48,7 +48,7 @@ html,body{
 		line-height:50px;
 		width:300px;
 		float:right;
-		margin-right:100px;
+		margin: 0 auto;
 		padding:0;
 		list-style:none;
 	}
