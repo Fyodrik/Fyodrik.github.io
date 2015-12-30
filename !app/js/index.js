@@ -6,7 +6,7 @@ function adaptiveContentHeight(){
         });
     else
         $('#content').css({
-            'height':window.innerHeight-99+'px'
+            'height':window.innerHeight-80+'px'
         });
     $('#content').css({
             'opacity':1
