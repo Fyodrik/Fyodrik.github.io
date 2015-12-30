@@ -33,7 +33,7 @@ var updateState = function(state){
                 //else{}
                 //  exit();
                 document.querySelector('title').innerHTML = jsonRouters.List[i].Title;
-                $('#content').css({
+                $('body').css({
                     'filter': 'grayscale(0%)',
                     '-webkitFilter':'grayscale(0%)'
                 });
