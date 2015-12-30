@@ -21,7 +21,7 @@ a:hover{
 	-user-select:none;
 	background:rgb(30,30,30);
 	border-bottom:2px solid rgb(21,21,21);
-	height: 50px;
+	height: 52px;
 	line-height:50px;
 	width: 100%;
 	cursor: default;
@@ -37,7 +37,6 @@ a:hover{
 		float:left;
 		font-family:"Freestyle Script";
 		font-size:43px;
-		line-height: 50px;
 		margin: 0;
 		text-align: left;
 	}
@@ -76,7 +75,7 @@ a:hover{
 	background-image: url(../img/bg.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
-	
+
 	opacity:0;
 	max-width:100%;
 	overflow-x:hidden;
