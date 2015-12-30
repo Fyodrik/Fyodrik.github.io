@@ -64,8 +64,7 @@ a:hover{
 			color:rgb(255,25,0);
 		}
 .nav-focus{
-	color:rgba(255,25,0,1);
-	transition:color .5s ease;
+	color:rgba(255,25,0,1) !important;
 }
 #content{
 	background-image: url(../img/bg.jpg);
