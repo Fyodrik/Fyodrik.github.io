@@ -6,6 +6,8 @@
 //Обновление состояния
 
 var updateState = function(state){
+    $('#nav-filter-menu li a').removeClass("nav-focus");
+    $('#'+state.page).addClass("nav-focus");
     //AJAx LOADING
     $('#content').load("!app/loading.html");
 
@@ -58,11 +60,8 @@ window.addEventListener("load", update);
 //Ссылки навигации и переходы по истории
 
 $('a.nav').bind("click", function(e){
-    id = e.target.getAttribute("href");
-    $('#nav-filter-menu li a').removeClass("nav-focus");
-    $('#'+id).addClass("nav-focus");
     var state = {
-        page: id
+        page: e.target.getAttribute("href");
     };
     history.pushState(state,'',state.page);
     updateState(state);
