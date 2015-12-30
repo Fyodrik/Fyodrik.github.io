@@ -59,7 +59,7 @@ window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
     id = e.target.getAttribute("href");
-    $('a.nav').css({
+    $('#nav-filter-menu li a').css({
        'color': '#FFF'
     });
     $('#'+id).css({
