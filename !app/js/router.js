@@ -41,11 +41,11 @@ var updateState = function(state){
                 return;
             }
         document.querySelector('title').innerHTML = "404 Error";
-        $('#body').css({
+        $('body').css({
             'filter': 'grayscale(100%)',
             '-webkitFilter':'grayscale(100%)'
         });
-        getElementById("content").innerHTML = '<h1 class="title" style="text-align:center;width:100%;">Error 404. This resource is not available on the site.</h1>';
+        document.getElementById("content").innerHTML = '<h1 class="title" style="text-align:center;width:100%;">Error 404. This resource is not available on the site.</h1>';
     });
 }
 
