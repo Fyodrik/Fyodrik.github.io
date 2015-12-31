@@ -61,7 +61,7 @@
             //Обновление состояния
 
             var updateState = function(state){
-                var strUrlHash = state.page;
+                var strUrlHash = replaceSlash(state.page);
 
                 //Выделение пункта меню
                 $('#nav-filter-menu li a').removeClass("nav-focus");
@@ -153,6 +153,9 @@
                   pos = foundPos + 1; // продолжить поиск со следующей
                 }
                 return str.slice(i+1); // нашли на этой позиции
+            }
+            var replaceSlash = function(page){
+                return page.replace(/\//g, "_");
             }
         </script>
 </body>
