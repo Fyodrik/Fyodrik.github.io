@@ -14,13 +14,7 @@
                     "FullLink":"https://fyodrik.github.io/",
                     "Title":"Main - Fyodrik"
                 },
-                {
-                    "UrlHash":"tech/1",
-                    "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[tech]/1_x-ray_engine/index.html",
-                    "FullLink":"https://fyodrik.github.io/other",
-                    "Title":"Tech - Fyodrik"
-                },
+                /////////////////////////////TECH
                 {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
@@ -29,12 +23,21 @@
                     "Title":"Tech - Fyodrik"
                 },
                 {
+                    "UrlHash":"tech/1",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[tech]/1_x-ray_engine/index.html",
+                    "FullLink":"https://fyodrik.github.io/tech/1",
+                    "Title":"Tech - Fyodrik"
+                },
+                /////////////////////////////AUDIAL
+                {
                     "UrlHash":"audial",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[audial]/index.html",
                     "FullLink":"https://fyodrik.github.io/audial",
                     "Title":"Audial - Fyodrik"
                 },
+                /////////////////////////////VISUAL
                 {
                     "UrlHash":"visual",
                     "FromLoc":"https://fyodrik.github.io/",
@@ -42,6 +45,7 @@
                     "FullLink":"https://fyodrik.github.io/visual",
                     "Title":"Visual - Fyodrik"
                 },
+                /////////////////////////////OTHER
                 {
                     "UrlHash":"other",
                     "FromLoc":"https://fyodrik.github.io/",
