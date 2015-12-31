@@ -17,22 +17,43 @@
                 {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[tech]/index.html",
+                    "ContentLink":"[tech]/about/index.html",
                     "FullLink":"https://fyodrik.github.io/tech",
                     "Title":"Tech - Fyodrik"
                 },
                 {
-                    "UrlHash":"tech/1",
+                    "UrlHash":"tech/portfolio",
                     "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[tech]/1_x-ray_engine/index.html",
-                    "FullLink":"https://fyodrik.github.io/tech/1",
+                    "ContentLink":"[tech]/portfolio/index.html",
+                    "FullLink":"https://fyodrik.github.io/tech/portfolio",
+                    "Title":"Tech - Fyodrik"
+                },
+                {
+                    "UrlHash":"tech/blog",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[tech]/blog/index.html",
+                    "FullLink":"https://fyodrik.github.io/tech/blog",
                     "Title":"Tech - Fyodrik"
                 },
                 {
                     "UrlHash":"audial",
                     "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[audial]/index.html",
+                    "ContentLink":"[audial]/about/index.html",
                     "FullLink":"https://fyodrik.github.io/audial",
+                    "Title":"Audial - Fyodrik"
+                },
+                {
+                    "UrlHash":"audial/portfolio",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[audial]/portfolio/index.html",
+                    "FullLink":"https://fyodrik.github.io/audial/portfolio",
+                    "Title":"Audial - Fyodrik"
+                },
+                {
+                    "UrlHash":"audial/blog",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[audial]/blog/index.html",
+                    "FullLink":"https://fyodrik.github.io/audial/blog",
                     "Title":"Audial - Fyodrik"
                 },
                 {
@@ -43,10 +64,38 @@
                     "Title":"Visual - Fyodrik"
                 },
                 {
+                    "UrlHash":"visual/portfolio",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[visual]/portfolio/index.html",
+                    "FullLink":"https://fyodrik.github.io/visual/portfolio",
+                    "Title":"Visual - Fyodrik"
+                },
+                {
+                    "UrlHash":"visual/blog",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[visual]/blog/index.html",
+                    "FullLink":"https://fyodrik.github.io/visual/blog",
+                    "Title":"Visual - Fyodrik"
+                },
+                {
                     "UrlHash":"other",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[other]/index.html",
                     "FullLink":"https://fyodrik.github.io/other",
+                    "Title":"Other - Fyodrik"
+                },
+                {
+                    "UrlHash":"other/portfolio",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[other]/portfolio/index.html",
+                    "FullLink":"https://fyodrik.github.io/other/portfolio",
+                    "Title":"Other - Fyodrik"
+                },
+                {
+                    "UrlHash":"other/blog",
+                    "FromLoc":"https://fyodrik.github.io/",
+                    "ContentLink":"[other]/blog/index.html",
+                    "FullLink":"https://fyodrik.github.io/other/blog",
                     "Title":"Other - Fyodrik"
                 }
             ]
