@@ -116,7 +116,7 @@
                 var state = {
                     page:sliceSlash(strHashRef)
                 };
-                
+
                 console.log(state);
 
                 history.pushState(state,'',state.page);
@@ -140,8 +140,8 @@
 
             window.addEventListener('popstate', function(e){updateState(e.state);});
 
-            var sliceSlash = function(state){
-                var str = state.page; // ищем в этой строке
+            var sliceSlash = function(page){
+                var str = page; // ищем в этой строке
                 var target = "/"; // цель поиска
                 var i;
                 var pos = 0;
