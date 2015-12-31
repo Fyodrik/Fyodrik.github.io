@@ -62,7 +62,7 @@
 
             var updateState = function(state){
                 var strUrlHash = state.page;
-                
+
                 //Выделение пункта меню
                 $('#nav-filter-menu li a').removeClass("nav-focus");
                 $('#'+strUrlHash).addClass("nav-focus");
@@ -114,10 +114,12 @@
                 else
                     strHashRef = location.hash.slice(1);
                 var state = {
-                    page:strHashRef
+                    page:sliceSlash(strHashRef)
                 };
                 
-                //history.pushState(state,'',state.page);
+                console.log(state);
+
+                history.pushState(state,'',state.page);
                 updateState(state);
             }
 
@@ -130,12 +132,28 @@
                 var state = {
                     page: e.target.getAttribute("href")
                 };
+
                 history.pushState(state,'',state.page);
                 updateState(state);
                 e.preventDefault();
             });
 
             window.addEventListener('popstate', function(e){updateState(e.state);});
+
+            var sliceSlash = function(state){
+                var str = state.page; // ищем в этой строке
+                var target = "/"; // цель поиска
+                var i;
+                var pos = 0;
+                while (true) {
+                  var foundPos = str.indexOf(target, pos);
+                  if (foundPos == -1) break;
+                  else i = foundPos;
+                  console.log( i ); // нашли на этой позиции
+                  pos = foundPos + 1; // продолжить поиск со следующей
+                }
+                return str.slice(i+1); // нашли на этой позиции
+            }
         </script>
 </body>
 </html>
