@@ -79,16 +79,15 @@ html,body{
 		.nav-category{
 			color:#FFF;
 			line-height:51px;
-			width:327px;
 			float:right;
 			display:block;
 			padding:0;
 			opacity:0;
 			list-style:none;
 			position: absolute;
-			right: 0px;
+			right: 80px;
 		}
-		ul.nav-category:hover li{
+		ul.nav-category li{
 			display:none;
 		}
 		#nav-filter-menu li:hover ul.nav-category{
