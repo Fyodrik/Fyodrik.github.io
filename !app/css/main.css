@@ -87,14 +87,12 @@ html,body{
 			position: absolute;
 			right: 80px;
 		}
-		ul.nav-category li, ul.nav-category li a{
-			display:none;
-		}
 		#nav-filter-menu li:hover ul.nav-category{
+			display:block;
 			opacity:1;
 			color:#FFF;
 			z-index: 100;
-			display:block;
+
 		}
 		#nav-filter-menu li:hover ul.nav-category:hover li a{
 			display:block;
