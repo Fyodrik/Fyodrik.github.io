@@ -75,6 +75,15 @@ html,body{
 		.nav-focus{
 			color:rgba(255,25,0,1) !important;
 		}
+		.nav-category{
+			color:#FFF;
+			line-height:51px;
+			width:327px;
+			float:right;
+			margin: 0 auto;
+			padding:0;
+			list-style:none;
+		}
 #wrap-content{
 	background-image:url(../img/bg.jpg);
 	background-size:cover;

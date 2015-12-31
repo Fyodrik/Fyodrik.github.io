@@ -6,7 +6,7 @@
 //Обновление состояния
 
 var updateState = function(state){
-    var strUrlHash = replaceSlash(state.page);
+    var strUrlHash = replaceSlash(state.page.slice(1));
 
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
