@@ -85,7 +85,6 @@ html,body{
 			opacity:0;
 			list-style:none;
 			position: absolute;
-			right: 80px;
 		}
 		#nav-filter-menu li:hover .nav-category{
 			display:block;
