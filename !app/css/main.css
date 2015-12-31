@@ -85,6 +85,7 @@ html,body{
 			opacity:0;
 			list-style:none;
 			position: absolute;
+			background: rgb(255,25,0);
 		}
 		#nav-filter-menu li:hover .nav-category{
 			display:block;
@@ -95,10 +96,6 @@ html,body{
 		}
 		#nav-filter-menu li:hover .nav-category li a{
 			color:#FFF;
-		}
-		#nav-filter-menu li:hover ul.nav-category li:hover a{
-			color:rgb(255,25,0);
-			display:block;
 		}
 #wrap-content{
 	background-image:url(../img/bg.jpg);
