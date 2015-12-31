@@ -6,6 +6,8 @@
 //Обновление состояния
 
 var updateState = function(strUrlHash){
+    console.log("updateState = ");
+    console.log(strUrlHash);
     var slash = strUrlHash.indexOf('/');
     if(slash!=-1) 
         if(slash==0)
@@ -92,7 +94,7 @@ $('a.nav').bind("click", function(e){
     e.preventDefault();
 });
 
-window.addEventListener('popstate', function(e){updateState(e.state);});
+window.addEventListener('popstate', function(e){updateState(e.state.page);});
 
 var sliceSlash = function(page){
     var str = page; // ищем в этой строке
