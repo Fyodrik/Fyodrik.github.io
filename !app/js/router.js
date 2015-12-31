@@ -83,7 +83,7 @@ window.addEventListener("load", update);
 
 //Ссылки навигации и переходы по истории
 
-$('a.nav').bind("click", function(e){
+$('.nav').bind("click", function(e){
     var state = {
         page: "/"+e.target.getAttribute("href")
     };
