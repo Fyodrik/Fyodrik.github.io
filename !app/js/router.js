@@ -65,7 +65,8 @@ var update = function(){
         page:sliceSlash(strHashRef)
     };
 
-    console.log("update: strHashRef = " + state);
+    console.log("update: strHashRef = ")
+    console.log(state);
 
     history.pushState(state,'',state.page);
     updateState(state);
@@ -81,7 +82,8 @@ $('a.nav').bind("click", function(e){
         page: "/"+e.target.getAttribute("href")
     };
 
-    console.log("a.nav: state = "+state);
+    console.log("a.nav: state = ");
+    console.log(state);
 
     history.pushState(state,'',state.page); //1.Записываем адрес в историю
     updateState(state);
