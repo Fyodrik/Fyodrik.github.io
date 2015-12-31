@@ -59,7 +59,7 @@
                 {
                     "UrlHash":"visual",
                     "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[visual]/index.html",
+                    "ContentLink":"[visual]/about/index.html",
                     "FullLink":"https://fyodrik.github.io/visual",
                     "Title":"Visual - Fyodrik"
                 },
@@ -80,7 +80,7 @@
                 {
                     "UrlHash":"other",
                     "FromLoc":"https://fyodrik.github.io/",
-                    "ContentLink":"[other]/index.html",
+                    "ContentLink":"[other]/about/index.html",
                     "FullLink":"https://fyodrik.github.io/other",
                     "Title":"Other - Fyodrik"
                 },
