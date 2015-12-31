@@ -11,3 +11,17 @@
         </div>
     </a>
 </div>
+<script>
+    $('a.nav').bind("click", function(e){
+        var state = {
+            page: "/"+e.target.getAttribute("href")
+        };
+
+        console.log("a.nav: state = ");
+        console.log(state);
+
+        history.pushState(state,'',state.page); //1.Записываем адрес в историю
+        updateState(state.page);
+        e.preventDefault();
+    });
+</script>

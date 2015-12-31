@@ -1,2 +1,15 @@
 <a class="nav" href="tech/blog/1" style="display:block;">123</a>
-<script src="https://fyodrik.github.io/!app/js/router.js"></script>
+<script>
+	$('a.nav').bind("click", function(e){
+	    var state = {
+	        page: "/"+e.target.getAttribute("href")
+	    };
+
+	    console.log("a.nav: state = ");
+	    console.log(state);
+
+	    history.pushState(state,'',state.page); //1.Записываем адрес в историю
+	    updateState(state.page);
+	    e.preventDefault();
+	});
+</script>
