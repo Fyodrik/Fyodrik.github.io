@@ -6,16 +6,16 @@
 //Обновление состояния
 
 var updateState = function(state){
-    var strUrlHash = state.page;
+    var strUrlHash = replaceSlash(state.page);
 
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
     $('#'+strUrlHash).addClass("nav-focus");
 
     //AJAX LOADING
-    $('#content').load("!app/loading.html");
+    $('#content').load("https://fyodrik.github.io/!app/loading.html");
 
-    
+    console.log(strUrlHash);
     //Проверка на якорь
     if(!state)
         if(location.hash.slice(1)=="")
@@ -59,8 +59,11 @@ var update = function(){
     else
         strHashRef = location.hash.slice(1);
     var state = {
-        page:strHashRef
+        page:sliceSlash(strHashRef)
     };
+
+    console.log(state);
+
     history.pushState(state,'',state.page);
     updateState(state);
 }
@@ -74,9 +77,28 @@ $('a.nav').bind("click", function(e){
     var state = {
         page: e.target.getAttribute("href")
     };
+
     history.pushState(state,'',state.page);
     updateState(state);
     e.preventDefault();
 });
 
 window.addEventListener('popstate', function(e){updateState(e.state);});
+
+var sliceSlash = function(page){
+    var str = page; // ищем в этой строке
+    var target = "/"; // цель поиска
+    var i;
+    var pos = 0;
+    while (true) {
+      var foundPos = str.indexOf(target, pos);
+      if (foundPos == -1) break;
+      else i = foundPos;
+      console.log( i ); // нашли на этой позиции
+      pos = foundPos + 1; // продолжить поиск со следующей
+    }
+    return str.slice(i+1); // нашли на этой позиции
+}
+var replaceSlash = function(page){
+    return page.replace(/\//g, "_");
+}
