@@ -7,6 +7,9 @@
 
 var updateState = function(state){
     var strUrlHash = replaceSlash(state.page.slice(1));
+    var slash = strUrlHash.indexOf('_');
+    if(slash!=-1)
+        strUrlHash =strUrlHash.slice(0,slash);
 
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
