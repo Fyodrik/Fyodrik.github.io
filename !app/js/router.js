@@ -78,6 +78,8 @@ $('a.nav').bind("click", function(e){
         page: e.target.getAttribute("href")
     };
 
+    console.log(state);
+
     history.pushState(state,'',state.page);
     updateState(state);
     e.preventDefault();
