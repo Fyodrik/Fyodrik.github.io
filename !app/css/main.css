@@ -60,7 +60,6 @@ html,body{
 			display:block;
 			text-decoration:none;
 			transition:color .5s ease;
-			position: absolute;
 		}
 		#nav-filter-menu li:hover{
 			color:rgb(255,25,0);
@@ -97,6 +96,7 @@ html,body{
 		}
 		#nav-filter-menu li:hover ul.nav-category:hover li{
 			display:block;
+			color:#FFF;
 		}
 		#nav-filter-menu li:hover ul.nav-category li:hover{
 			color:rgb(255,25,0);
