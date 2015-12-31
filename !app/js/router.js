@@ -9,8 +9,8 @@ var updateState = function(state){
     var strUrlHash = replaceSlash(state.page.slice(1));
     var slash = strUrlHash.indexOf('_');
     if(slash!=-1)
-        strUrlHash =strUrlHash.slice(0,slash);
-
+        strUrlHash = strUrlHash.slice(0,slash);
+    console.log("id = "+strUrlHash);
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
     $('#'+strUrlHash).addClass("nav-focus");
@@ -18,7 +18,7 @@ var updateState = function(state){
     //AJAX LOADING
     $('#content').load(strSiteDomen+"!app/loading.html");
 
-    console.log(strUrlHash);
+    
     //Проверка на якорь
     if(!state)
         if(location.hash.slice(1)=="")
