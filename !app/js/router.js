@@ -5,9 +5,8 @@
 
 //Обновление состояния
 
-var updateState = function(state){
-    var strUrlHash = replaceSlash(state.page.slice(1));
-    var slash = strUrlHash.indexOf('_');
+var updateState = function(state, strHashRef){
+    var slash = strUrlHash.indexOf('/');
     if(slash!=-1)
         strUrlHash = strUrlHash.slice(0,slash);
     console.log("id = "+strUrlHash);
@@ -65,11 +64,11 @@ var update = function(){
         page:sliceSlash(strHashRef)
     };
 
-    console.log("update: strHashRef = ")
+    console.log("update: strHashRef = ");
     console.log(state);
 
     history.pushState(state,'',state.page);
-    updateState(state);
+    updateState(state, strHashRef);
 }
 
 window.addEventListener("hashchange", update);
