@@ -83,6 +83,10 @@ html,body{
 			margin: 0 auto;
 			padding:0;
 			list-style:none;
+
+		}
+		#nav-filter-menu li:hover ul.nav-category{
+			opacity:1;
 		}
 #wrap-content{
 	background-image:url(../img/bg.jpg);
