@@ -5,10 +5,13 @@
 
 //Обновление состояния
 
-var updateState = function(state, strHashRef){
+var updateState = function(strUrlHash){
     var slash = strUrlHash.indexOf('/');
-    if(slash!=-1)
-        strUrlHash = strUrlHash.slice(0,slash);
+    if(slash!=-1) 
+        if(slash==0)
+            strUrlHash = strUrlHash.slice(1);
+        else
+            strUrlHash = strUrlHash.slice(0,slash);
     console.log("id = "+strUrlHash);
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
@@ -67,8 +70,8 @@ var update = function(){
     console.log("update: strHashRef = ");
     console.log(state);
 
-    history.pushState(state,'',state.page);
-    updateState(state, strHashRef);
+    history.pushState(state,'',state.page); //кидаем без слэшей
+    updateState(strHashRef); //Кидаем со слэшами
 }
 
 window.addEventListener("hashchange", update);
@@ -85,7 +88,7 @@ $('a.nav').bind("click", function(e){
     console.log(state);
 
     history.pushState(state,'',state.page); //1.Записываем адрес в историю
-    updateState(state);
+    updateState(state.page);
     e.preventDefault();
 });
 
