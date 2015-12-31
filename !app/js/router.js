@@ -8,12 +8,14 @@
 var updateState = function(strUrlHash){
     console.log("updateState = ");
     console.log(strUrlHash);
-    var slash = strUrlHash.indexOf('/');
-    if(slash!=-1) 
+    var slash;
+    if(slash = strUrlHash.indexOf('/')) 
         if(slash==0)
             strUrlHash = strUrlHash.slice(1);
         else
             strUrlHash = strUrlHash.slice(0,slash);
+    if(slash = strUrlHash.indexOf('/'))
+           strUrlHash = strUrlHash.slice(0,slash);
     console.log("id = "+strUrlHash);
     //Выделение пункта меню
     $('#nav-filter-menu li a').removeClass("nav-focus");
