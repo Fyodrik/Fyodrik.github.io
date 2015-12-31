@@ -1,7 +1,7 @@
 // (C) 2015 Dmitry Fyodorov (aka Fyodrik)
 // Router.js - браузерная маршрутизация для AJAX-подзагрузки
 // Венгерская нотация
-; var strCurLoc = location.toString(), strSiteDomen = "https://fyodrik.github.io/";
+; var strCurLoc = location.toString(), strSiteDomen = location.hostname;//"https://fyodrik.github.io/";
 
 //Обновление состояния
 
@@ -13,7 +13,7 @@ var updateState = function(state){
     $('#'+strUrlHash).addClass("nav-focus");
 
     //AJAX LOADING
-    $('#content').load("https://fyodrik.github.io/!app/loading.html");
+    $('#content').load(strSiteDomen+"!app/loading.html");
 
     console.log(strUrlHash);
     //Проверка на якорь
@@ -24,7 +24,7 @@ var updateState = function(state){
             return;
 
     //Проход по таблице маршрутизации
-    $.getJSON("!app/js/routersDB.json", function(jsonRouters){
+    $.getJSON(strSiteDomen+"!app/js/routersDB.json", function(jsonRouters){
         for(var i = 0; i<jsonRouters.List.length; i++)
             if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){
                 //if(strCurLoc!=jsonRouters.List[i].FromLoc){
