@@ -57,6 +57,7 @@ html,body{
 			margin-right:7px;
 			margin-left:7px;
 			float:left;
+			display:block;
 			text-decoration:none;
 			transition:color .5s ease;
 		}
@@ -80,8 +81,9 @@ html,body{
 			line-height:51px;
 			width:327px;
 			float:right;
-			margin: 0 auto;
+			display:block;
 			padding:0;
+			opacity:0;
 			list-style:none;
 
 		}
