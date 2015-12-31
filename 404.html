@@ -116,12 +116,12 @@
                 var state = {
                     page:strHashRef
                 };
-                history.pushState(state,'',state.page);
-                updateState(state);
+                // history.pushState(state,'',state.page);
+                // updateState(state);
             }
 
-            // window.addEventListener("hashchange", update);
-            // window.addEventListener("load", update);
+            //window.addEventListener("hashchange", update);
+            window.addEventListener("load", update);
 
             //Ссылки навигации и переходы по истории
 
