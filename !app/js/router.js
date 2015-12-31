@@ -94,7 +94,7 @@ var sliceSlash = function(page){
       var foundPos = str.indexOf(target, pos);
       if (foundPos == -1) break;
       else i = foundPos;
-      console.log( i ); // нашли на этой позиции
+      console.log(i); // нашли на этой позиции
       pos = foundPos + 1; // продолжить поиск со следующей
     }
     return str.slice(i+1); // нашли на этой позиции
