@@ -60,6 +60,7 @@ html,body{
 			display:block;
 			text-decoration:none;
 			transition:color .5s ease;
+			position: absolute;
 		}
 		#nav-filter-menu li:hover{
 			color:rgb(255,25,0);
@@ -85,10 +86,21 @@ html,body{
 			padding:0;
 			opacity:0;
 			list-style:none;
-
+			position: absolute;
+		}
+		ul.nav-category:hover li{
+			display:none;
 		}
 		#nav-filter-menu li:hover ul.nav-category{
 			opacity:1;
+			color:#FFF;
+		}
+		#nav-filter-menu li:hover ul.nav-category:hover li{
+			display:block;
+		}
+		#nav-filter-menu li:hover ul.nav-category li:hover{
+			color:rgb(255,25,0);
+			display:block;
 		}
 #wrap-content{
 	background-image:url(../img/bg.jpg);
