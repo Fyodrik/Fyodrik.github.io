@@ -80,20 +80,21 @@ html,body{
 			color:#FFF;
 			line-height:51px;
 			float:right;
-			display:block;
+			display:none;
 			padding:0;
 			opacity:0;
 			list-style:none;
 			position: absolute;
 			right: 80px;
 		}
-		ul.nav-category li{
+		ul.nav-category li, ul.nav-category li a{
 			display:none;
 		}
 		#nav-filter-menu li:hover ul.nav-category{
 			opacity:1;
 			color:#FFF;
 			z-index: 100;
+			display:block;
 		}
 		#nav-filter-menu li:hover ul.nav-category:hover li a{
 			display:block;
