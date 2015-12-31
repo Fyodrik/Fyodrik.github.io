@@ -22,11 +22,11 @@ var updateState = function(strUrlHash){
 
     
     //Проверка на якорь
-    if(!state)
-        if(location.hash.slice(1)=="")
-            strUrlHash = null;
-        else
-            return;
+    // if(!strUrlHash)
+    //     if(location.hash.slice(1)=="")
+    //         strUrlHash = null;
+    //     else
+    //         return;
 
     //Проход по таблице маршрутизации
     $.getJSON(strSiteDomen+"!app/js/routersDB.json", function(jsonRouters){
