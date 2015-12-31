@@ -26,7 +26,7 @@ var updateState = function(state){
     //Проход по таблице маршрутизации
     $.getJSON(strSiteDomen+"!app/js/routersDB.json", function(jsonRouters){
         for(var i = 0; i<jsonRouters.List.length; i++)
-            if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){
+            if(location.pathname.slice(1)==jsonRouters.List[i].UrlHash){ //2.Вынимаем адрес и ищем по БД
                 //if(strCurLoc!=jsonRouters.List[i].FromLoc){
                 //   exit_n();
                 //}
@@ -75,12 +75,12 @@ window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
     var state = {
-        page: e.target.getAttribute("href")
+        page: "/"+e.target.getAttribute("href")
     };
 
     console.log(state);
 
-    history.pushState(state,'',state.page);
+    history.pushState(state,'',state.page); //1.Записываем адрес в историю
     updateState(state);
     e.preventDefault();
 });
