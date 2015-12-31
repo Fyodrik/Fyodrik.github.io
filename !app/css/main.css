@@ -86,6 +86,7 @@ html,body{
 			opacity:0;
 			list-style:none;
 			position: absolute;
+			right: 0px;
 		}
 		ul.nav-category:hover li{
 			display:none;
@@ -93,12 +94,13 @@ html,body{
 		#nav-filter-menu li:hover ul.nav-category{
 			opacity:1;
 			color:#FFF;
+			z-index: 100;
 		}
-		#nav-filter-menu li:hover ul.nav-category:hover li{
+		#nav-filter-menu li:hover ul.nav-category:hover li a{
 			display:block;
 			color:#FFF;
 		}
-		#nav-filter-menu li:hover ul.nav-category li:hover{
+		#nav-filter-menu li:hover ul.nav-category li:hover a{
 			color:rgb(255,25,0);
 			display:block;
 		}
