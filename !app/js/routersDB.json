@@ -14,7 +14,6 @@
                     "FullLink":"https://fyodrik.github.io/",
                     "Title":"Main - Fyodrik"
                 },
-                /////////////////////////////TECH
                 {
                     "UrlHash":"tech",
                     "FromLoc":"https://fyodrik.github.io/",
@@ -29,7 +28,6 @@
                     "FullLink":"https://fyodrik.github.io/tech/1",
                     "Title":"Tech - Fyodrik"
                 },
-                /////////////////////////////AUDIAL
                 {
                     "UrlHash":"audial",
                     "FromLoc":"https://fyodrik.github.io/",
@@ -37,7 +35,6 @@
                     "FullLink":"https://fyodrik.github.io/audial",
                     "Title":"Audial - Fyodrik"
                 },
-                /////////////////////////////VISUAL
                 {
                     "UrlHash":"visual",
                     "FromLoc":"https://fyodrik.github.io/",
@@ -45,7 +42,6 @@
                     "FullLink":"https://fyodrik.github.io/visual",
                     "Title":"Visual - Fyodrik"
                 },
-                /////////////////////////////OTHER
                 {
                     "UrlHash":"other",
                     "FromLoc":"https://fyodrik.github.io/",
