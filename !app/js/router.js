@@ -9,12 +9,12 @@ var updateState = function(strUrlHash){
     console.log("updateState = ");
     console.log(strUrlHash);
     var slash;
-    if(slash = strUrlHash.indexOf('/')) 
+    if((slash = strUrlHash.indexOf('/'))+1) 
         if(slash==0)
             strUrlHash = strUrlHash.slice(1);
         else
             strUrlHash = strUrlHash.slice(0,slash);
-    if(slash = strUrlHash.indexOf('/'))
+    if((slash = strUrlHash.indexOf('/'))+1)
            strUrlHash = strUrlHash.slice(0,slash);
     console.log("id = "+strUrlHash);
     //Выделение пункта меню
