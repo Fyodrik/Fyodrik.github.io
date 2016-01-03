@@ -46,10 +46,7 @@ var updateState = function(strUrlHash){
                     'filter': 'grayscale(0%)',
                     '-webkitFilter':'grayscale(0%)'
                 });
-                $('#content').load(jsonRouters.List[i].FromLoc+jsonRouters.List[i].ContentLink, adaptiveContent());
-                console.log("<");
-                
-                console.log(">");
+                $('#content').load(jsonRouters.List[i].FromLoc+jsonRouters.List[i].ContentLink);
                 return;
             }
         document.querySelector('title').innerHTML = "404 Error";
