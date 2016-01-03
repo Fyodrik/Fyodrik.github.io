@@ -10,15 +10,15 @@ html,body{
 		background-size: 115%;
 	}
 	#header{
-		font-size: 39px;
-		height: 104px;
+		font-size: 39px !important;
+		height: 104px !important;
 	}
 	#fyodrik-logo-title{
-		float:none;
-		margin:0 auto;
+		float:none !important;
+		margin:0 auto !important;
 	}
 	#nav-filter-menu{
-		float:none;
+		float:none !important;
 	}
 }
 	a{
