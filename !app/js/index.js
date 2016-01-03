@@ -37,7 +37,7 @@ var adaptiveContent = function(){
     }
     if(window.innerWidth>460){
         $('#nav-container').css({
-            'width':parseInt(window.innerWidth/460)*(460)+'px'
+            'width':parseInt(window.innerWidth/460)*(460)+10+'px'
         });
         $('.button').css({
             'width':436+'px'
@@ -47,6 +47,6 @@ var adaptiveContent = function(){
         });
     }
 }
-
+adaptiveContent();
 window.addEventListener("load", adaptiveContent);
 window.addEventListener("resize", adaptiveContent);
