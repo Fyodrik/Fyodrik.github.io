@@ -1,13 +1,24 @@
 html,body{
 	color:#CCC;
 	margin:0 auto;
-	min-width: 770px; /*min=360*/
+	/*min-width: 770px; /*min=360*/
 	padding:0;
 	height: 100%;
 }
 @media only screen and (max-width : 790px) {
 	html, body{
 		background-size: 115%;
+	}
+	#header{
+		font-size: 39px;
+		height: 104px;
+	}
+	#fyodrik-logo-title{
+		float:none;
+		margin:0 auto;
+	}
+	#nav-filter-menu{
+		float:none;
 	}
 }
 	a{
@@ -34,6 +45,9 @@ html,body{
 	#header a{
 		color:white;
 		text-decoration: none;
+	}
+	#fyodrik-logo-title{
+		float:left;
 	}
 	.title{
 		color:#FFF;
@@ -145,6 +159,11 @@ html,body{
     margin-right: 0;
     margin-bottom: 0;
     overflow: hidden;
+}
+@media only screen and (max-width : 375px) {
+	.button{
+		width: 340px;
+	}
 }
 .button:hover{
     background-color: rgba(30,30,30,1);
