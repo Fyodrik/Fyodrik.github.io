@@ -37,7 +37,6 @@ html,body{
 	-user-select:none;
 	background: rgb(30,30,30);
 	height: 52px;
-	line-height:51px;
 	border-bottom:2px solid rgb(255,25,0);
 	cursor: default;
 	font-size:45px;
@@ -61,7 +60,6 @@ html,body{
 	/* NAVIGATION */
 	#nav-filter-menu{
 		color:#FFF;
-		line-height:51px;
 		width:327px;
 		float:right;
 		margin: 0 auto;
