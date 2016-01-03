@@ -54,46 +54,11 @@
             <div id="content"></div>
         </div>
     <!--SCRIPTS-->
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js" />
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <script>
-            function adaptiveContent(){
-                if(window.innerHeight-54<=500)
-                    $('#content').css({
-                        'height':'550px'
-                    });
-                else
-                    $('#content').css({
-                        'height':window.innerHeight-54+'px'
-                    });
-                $('#content').css({
-                    'opacity':1
-                });
-                
-                if(window.innerWidth<=460&&window.innerWidth>=375){
-                    $('#nav-container').css({
-                        'width':window.innerWidth-40+'px'
-                    });
-                    $('.button').css({
-                        'width':window.innerWidth-40+'px'
-                    });
-                    $('.navin').css({
-                        'width':window.innerWidth-26+'px'
-                    });
-                }
-                else{
-                    var n = parseInt(window.innerWidth/436);
-                    $('#nav-container').css({
-                        'width':442+(n-1)*(436+10)+'px'
-                    });
-                }
-            }
-
-            window.addEventListener("load", adaptiveContent);
-            window.addEventListener("resize", adaptiveContent);
-        </script>
-        <script src="https://fyodrik.github.io/!app/js/router.js"></script>
+        <script src="https://fyodrik.github.io/!app/js/index.js" />
+        <script src="https://fyodrik.github.io/!app/js/router.js" />
 </body>
 </html>
