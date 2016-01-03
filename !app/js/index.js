@@ -46,6 +46,7 @@ var adaptiveContent = function(){
             'width':450+'px'
         });
     }
+    console.log("ADAPTIVING");
 }
 
 window.addEventListener("load", adaptiveContent);
