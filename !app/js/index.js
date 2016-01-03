@@ -12,7 +12,10 @@ var adaptiveContent = function(){
     $('#content').css({
         'opacity':1
     });
-    console.log(document.getElementById('nav-container'));
+    if(document.getElementById('nav-container'))
+    	console.log(1);
+    else
+    	console.log(0);
     //Button Width and centralization
     if(window.innerWidth<=460&&window.innerWidth>=375){
         $('#nav-container').css({
