@@ -21,7 +21,7 @@ function adaptiveContent(){
             'width':window.innerWidth-24+'px'
         });
         $('.navin').css({
-            'width':window.innerWidth-24+'px'
+            'width':window.innerWidth-10+'px'
         });
     }
     else{
@@ -33,18 +33,18 @@ function adaptiveContent(){
                 'width':375-24+'px'
             });
             $('.navin').css({
-                'width':375-24+'px'
+                'width':375-10+'px'
             });
         }
         else{
             $('#nav-container').css({
-                'width':parseInt(window.innerWidth/436)*(436)+'px'
+                'width':parseInt(window.innerWidth/460)*(460)+'px'
             });
             $('.button').css({
                 'width':436+'px'
             });
             $('.navin').css({
-                'width':436+'px'
+                'width':450+'px'
             });
         }
     }
