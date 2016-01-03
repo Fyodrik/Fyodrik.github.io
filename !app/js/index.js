@@ -15,13 +15,13 @@ function adaptiveContent(){
     //Button Width and centralization
     if(window.innerWidth<=460&&window.innerWidth>=375){
         $('#nav-container').css({
-            'width':window.innerWidth-40+'px'
+            'width':window.innerWidth+'px'
         });
         $('.button').css({
-            'width':window.innerWidth-40+'px'
+            'width':window.innerWidth-24+'px'
         });
         $('.navin').css({
-            'width':window.innerWidth-26+'px'
+            'width':window.innerWidth-24+'px'
         });
     }
     else{
