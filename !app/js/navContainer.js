@@ -1,4 +1,4 @@
-var adaptiveNavContainer = function(){
+(var adaptiveNavContainer = function(){
     if(document.getElementById('nav-container'))
     	console.log(1);
     else
@@ -38,6 +38,6 @@ var adaptiveNavContainer = function(){
         });
     }
     console.log("ADAPTIVING");
-}
+})();
 window.addEventListener("load", adaptiveNavContainer);
 window.addEventListener("resize", adaptiveNavContainer);
