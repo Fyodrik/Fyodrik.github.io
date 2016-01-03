@@ -160,11 +160,6 @@ html,body{
     margin-bottom: 0;
     overflow: hidden;
 }
-@media only screen and (max-width : 442px) {
-	.button{
-		width: 340px;
-	}
-}
 .button:hover{
     background-color: rgba(30,30,30,1);
     color:#FFF;
