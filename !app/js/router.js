@@ -46,9 +46,9 @@ var updateState = function(strUrlHash){
                     'filter': 'grayscale(0%)',
                     '-webkitFilter':'grayscale(0%)'
                 });
-                $('#content').load(jsonRouters.List[i].FromLoc+jsonRouters.List[i].ContentLink);
+                $('#content').load(jsonRouters.List[i].FromLoc+jsonRouters.List[i].ContentLink, adaptiveContent());
                 console.log("<");
-                adaptiveContent();
+                
                 console.log(">");
                 return;
             }
