@@ -69,25 +69,25 @@
                         'height':window.innerHeight-54+'px'
                     });
                 $('#content').css({
-                        'opacity':1
-                    });
+                    'opacity':1
+                });
                 if(window.innerWidth<=874)
                     var n = parseInt(window.innerWidth/(422+20));
-                else
+                if(window.innerWidth>874)
                     var n = parseInt(window.innerWidth/(422+10));
                 $('#nav-container').css({
                     'width':442+(n-1)*(422+10)+'px'
-                })
+                });
                 if(window.innerWidth<=460&&window.innerWidth>=375){
                     $('#nav-container').css({
                         'width':window.innerWidth-40+'px'
-                    })
+                    });
                     $('.button').css({
                         'width':window.innerWidth-40+'px'
-                    })
+                    });
                     $('.navin').css({
                         'width':window.innerWidth-26+'px'
-                    })
+                    });
                 }
             }
 
