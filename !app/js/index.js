@@ -52,6 +52,6 @@ var adaptiveContent = function(){
     }
     console.log("ADAPTIVING");
 }
-
+adaptiveContent();
 window.addEventListener("load", adaptiveContent);
 window.addEventListener("resize", adaptiveContent);
