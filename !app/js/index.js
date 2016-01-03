@@ -47,6 +47,6 @@ var adaptiveContent = function(){
         });
     }
 }
-adaptiveContent();
+
 window.addEventListener("load", adaptiveContent);
 window.addEventListener("resize", adaptiveContent);
