@@ -12,8 +12,6 @@ var adaptiveContent = function(){
     $('#content').css({
         'opacity':1
     });
-    //AJAX LOADING
-    $('#content').load(strSiteDomen+"!app/loading.html");
 }
 window.addEventListener("load", adaptiveContent);
 window.addEventListener("resize", adaptiveContent);

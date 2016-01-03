@@ -9,7 +9,7 @@ var updateState = function(strUrlHash){
     console.log("updateState = ");
     console.log(strUrlHash);
     var slash;
-    if((slash = strUrlHash.indexOf('/'))+1) 
+    if((slash = strUrlHash.indexOf('/'))+1)
         if(slash==0)
             strUrlHash = strUrlHash.slice(1);
         else
