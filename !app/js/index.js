@@ -27,13 +27,13 @@ function adaptiveContent(){
     else{
         if(window.innerWidth<375){
             $('#nav-container').css({
-                'width':375-40+'px'
+                'width':375+'px'
             });
             $('.button').css({
-                'width':375-40+'px'
+                'width':375-24+'px'
             });
             $('.navin').css({
-                'width':375-26+'px'
+                'width':375-24+'px'
             });
         }
         else{
