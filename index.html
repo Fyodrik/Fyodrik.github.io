@@ -59,7 +59,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script>
-            function adaptiveContentHeight(){
+            function adaptiveContent(){
                 if(window.innerHeight-54<=500)
                     $('#content').css({
                         'height':'550px'
@@ -87,8 +87,8 @@
                     })  
             }
 
-            window.addEventListener("load", adaptiveContentHeight);
-            window.addEventListener("resize", adaptiveContentHeight);
+            window.addEventListener("load", adaptiveContent);
+            window.addEventListener("resize", adaptiveContent);
         </script>
         <script src="https://fyodrik.github.io/!app/js/router.js"></script>
 </body>
