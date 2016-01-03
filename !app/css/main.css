@@ -118,76 +118,71 @@ html,body{
 	background-repeat:no-repeat;
 	background-position:0;
 }
-#content{
-	background-color: rgba(0,0,0,.5);
-	opacity:0;
-	max-width:100%;
-	overflow-x:hidden;
-	overflow-y:auto;
-	z-index: 1;
-	transition:opacity .5s ease;
-}
-#content::after{
-	content: "";
-	display:block;
-	clear:both;
-	height: 0;
-}
-	#subtitle{
-		background: rgb(50,50,50);
-		font-size: 20px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
+	#content{
+		background-color: rgba(0,0,0,.5);
+		opacity:0;
+		max-width:100%;
+		overflow-x:hidden;
+		overflow-y:auto;
+		z-index: 1;
+		transition:opacity .5s ease;
 	}
+		#content::after{
+			content: "";
+			display:block;
+			clear:both;
+			height: 0;
+		}
 /*TILES*/
 #nav-container{
     margin:0 auto;
     padding: 0;
     height: 100%;
+    opacity:0;
+    transition:opacity .5s ease;
 }
-.button{
-    width:422px;
-    padding: 5px;
-    height: 260px;
-    float:left;
-    background-color: rgba(30,30,30,.7);
-    border:2px solid rgba(30,30,30,0);
-    display: block;
-    font-family: Calibri, Arial;
-    text-decoration: none;
-    color:#FFF;
-    margin: 10px;
-    margin-right: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-}
-.button:hover{
-    background-color: rgba(30,30,30,1);
-    color:#FFF;
-}
-.button-header{
-    line-height: 20px;
-    height: 20px;
-}
-    .button-title{
-        display:block;
-        float:left;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .button-data{
-        display:block;
-        float:right;
-        font-size: 15px;
-    }
-.button-content{
-    margin-top: 10px;
-    opacity: .5;
-}
-.button:hover .button-title{
-    color: rgb(255,25,0);
-}
-.button:hover .button-content{
-    opacity:1;
-}
+	.button{
+	    width:422px;
+	    padding: 5px;
+	    height: 260px;
+	    float:left;
+	    background-color: rgba(30,30,30,.7);
+	    border:2px solid rgba(30,30,30,0);
+	    display: block;
+	    font-family: Calibri, Arial;
+	    text-decoration: none;
+	    color:#FFF;
+	    margin: 10px;
+	    margin-right: 0;
+	    margin-bottom: 0;
+	    overflow: hidden;
+	}
+	.button:hover{
+	    background-color: rgba(30,30,30,1);
+	    color:#FFF;
+	}
+	.button-header{
+	    line-height: 20px;
+	    height: 20px;
+	}
+	    .button-title{
+	        display:block;
+	        float:left;
+	        font-size: 20px;
+	        font-weight: bold;
+	    }
+	    .button-data{
+	        display:block;
+	        float:right;
+	        font-size: 15px;
+	    }
+	.button-content{
+	    margin-top: 10px;
+	    opacity: .5;
+	}
+	.button:hover .button-title{
+	    color: rgb(255,25,0);
+	}
+	.button:hover .button-content{
+	    opacity:1;
+	}

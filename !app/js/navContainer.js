@@ -37,7 +37,11 @@ var adaptiveNavContainer = function(){
             'width':450+'px'
         });
     }
-    console.log("ADAPTIVING");
+    //Content Opacity
+    $('#nav-container').css({
+        'opacity':1
+    });
+    console.log("ADAPTIVING nav-container");
 }
 adaptiveNavContainer();
 window.addEventListener("load", adaptiveNavContainer);

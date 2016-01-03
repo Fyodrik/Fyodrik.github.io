@@ -8,10 +8,6 @@ var adaptiveContent = function(){
         $('#content').css({
             'height':window.innerHeight-54+'px'
         });
-    //Content Opacity
-    $('#content').css({
-        'opacity':1
-    });
 }
 window.addEventListener("load", adaptiveContent);
 window.addEventListener("resize", adaptiveContent);
