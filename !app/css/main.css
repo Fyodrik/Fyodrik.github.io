@@ -1,7 +1,7 @@
 html,body{
 	color:#CCC;
 	margin:0 auto;
-	/*min-width: 770px; /*min=360*/
+	min-width: 375px; /*min=360*/
 	padding:0;
 	height: 100%;
 }
@@ -15,9 +15,7 @@ html,body{
 	}
 	#fyodrik-logo-title{
 		float:none !important;
-	}
-	#fyodrik-logo-title a{
-		margin:0 auto !important;
+		text-align:center;
 	}
 	#nav-filter-menu{
 		float:none !important;
