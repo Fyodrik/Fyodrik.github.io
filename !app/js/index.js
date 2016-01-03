@@ -1,4 +1,4 @@
-function adaptiveContent(){
+var adaptiveContent = function(){
     //Content Height
     if(window.innerHeight-54<=500)
         $('#content').css({
