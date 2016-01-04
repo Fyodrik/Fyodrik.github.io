@@ -22,7 +22,7 @@ html,body{
 		float:none !important;
 	}
 	#nav-filter-menu ul{
-		width:150px;
+		width:150px !important;
 	}
 }
 	a{
@@ -115,6 +115,9 @@ html,body{
 			left:-30px;
 			opacity:1;
 			z-index: 100;
+		}
+		#nav-filter-menu li+li+li+li:hover ul{
+			left:-90px;
 		}
 		#nav-filter-menu li:hover ul li a{
 			color:#FFF;
