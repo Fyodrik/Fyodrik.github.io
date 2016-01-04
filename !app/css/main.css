@@ -12,7 +12,7 @@ html,body{
 	}
 	#header{
 		font-size: 39px !important;
-		height: 104px !important;
+		height: 90px !important;
 	}
 	#fyodrik-logo-title{
 		float:none !important;
@@ -23,6 +23,7 @@ html,body{
 	}
 	#nav-filter-menu ul{
 		width:150px !important;
+		margin-top: -10px !important;
 	}
 	#nav-filter-menu li+li+li+li:hover ul{
 		left:-40px !important;
