@@ -68,9 +68,11 @@ html,body{
 		display: block;
 	}
 		#nav-filter-menu > li{
+			position: relative;
+		}
+		#nav-filter-menu li{
 			margin-right:7px;
 			margin-left:7px;
-			position: relative;
 			float:left;
 			display:block;
 			text-decoration:none;
@@ -81,7 +83,7 @@ html,body{
 			color:#FFF;
 			display: block;
 		}
-		#nav-filter-menu li a:hover{
+		#nav-filter-menu li:hover{
 			color:rgb(255,25,0);
 		}
 		.nav-focus{
@@ -97,10 +99,6 @@ html,body{
 			list-style:none;
 			position: absolute;
 			background: rgb(255,25,0);
-		}
-		#nav-filter-menu ul li{
-			float:left;
-			display: block;
 		}
 		#nav-filter-menu ul li a{
 			opacity:.5;
