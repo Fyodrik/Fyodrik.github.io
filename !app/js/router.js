@@ -82,8 +82,7 @@ window.addEventListener("hashchange", update);
 window.addEventListener("load", update);
 
 //Ссылки навигации и переходы по истории
-
-$('a.nav').bind("click", function(e){
+var link_update = function(e){
     var state = {
         page: e.target.getAttribute("href").slice(25)
     };
@@ -94,7 +93,8 @@ $('a.nav').bind("click", function(e){
     history.pushState(state,'',state.page); //1.Записываем адрес в историю
     updateState(state.page);
     e.preventDefault();
-});
+}
+$('a.nav').bind("click", link_update);
 
 window.addEventListener('popstate', function(e){updateState(e.state.page);});
 
