@@ -67,7 +67,7 @@ html,body{
 		list-style:none;
 		display: block;
 	}
-		#nav-filter-menu > li{
+		.nav-filter-menu-1lvl{
 			position: relative;
 		}
 		#nav-filter-menu li{
