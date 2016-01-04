@@ -1,6 +1,6 @@
 <div id="nav-container">
     <div class="button">
-        <a class="navin" href="tech/blog/1" style="position:absolute;display:block;z-index:1000;width:436px;height:274px;margin-left:-7px;margin-top:-7px;"></a>
+        <a class="navin" href="https://fyodrik.github.io/tech/blog/1" style="position:absolute;display:block;z-index:1000;width:436px;height:274px;margin-left:-7px;margin-top:-7px;"></a>
         <div class="button-header">
             <span class="button-title">Разбор игрового движка X-ray (Скоро)</span>
             <span class="button-data">30/12/2015</span> 
@@ -12,17 +12,3 @@
     </div>
 </div>
 <script src="https://fyodrik.github.io/!app/js/navContainer.js"></script>
-<script>
-    $('a.navin').bind("click", function(e){
-        var state = {
-            page: "/"+e.target.getAttribute("href")
-        };
-
-        console.log("a.nav: state = ");
-        console.log(state);
-
-        history.pushState(state,'',state.page); //1.Записываем адрес в историю
-        updateState(state.page);
-        e.preventDefault();
-    });
-</script>

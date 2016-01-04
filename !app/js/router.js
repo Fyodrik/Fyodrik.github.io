@@ -85,7 +85,7 @@ window.addEventListener("load", update);
 
 $('a.nav').bind("click", function(e){
     var state = {
-        page: "/"+e.target.getAttribute("href")
+        page: e.target.getAttribute("href").slice(25)
     };
 
     console.log("a.nav: state = ");
