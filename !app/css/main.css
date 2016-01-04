@@ -67,10 +67,8 @@ html,body{
 		list-style:none;
 		display: block;
 	}
-		.nav-filter-menu-1lvl{
+		#nav-filter-menu > li{
 			position: relative;
-		}
-		#nav-filter-menu li{
 			margin-right:7px;
 			margin-left:7px;
 			float:left;
@@ -99,6 +97,11 @@ html,body{
 			list-style:none;
 			position: absolute;
 			background: rgb(255,25,0);
+			width: 160px;
+		}
+		#nav-filter-menu ul li{
+			float:left;
+			display: block;
 		}
 		#nav-filter-menu ul li a{
 			opacity:.5;
