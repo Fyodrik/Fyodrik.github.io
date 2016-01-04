@@ -108,6 +108,8 @@ html,body{
 		}
 		#nav-filter-menu li:hover ul li a{
 			color:#FFF;
+		}
+		#nav-filter-menu li:hover ul li a:hover{
 			opacity:1;
 		}
 #wrap-content{
