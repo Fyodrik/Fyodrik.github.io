@@ -43,3 +43,6 @@ var adaptiveNavContainer = function(){
     });
     console.log("ADAPTIVING nav-container");
 }
+adaptiveNavContainer();
+window.addEventListener("load", adaptiveNavContainer);
+window.addEventListener("resize", adaptiveNavContainer);
