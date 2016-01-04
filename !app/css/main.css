@@ -105,6 +105,7 @@ html,body{
 		#nav-filter-menu ul li{
 			float:left;
 			display: block;
+			margin-left:5px;
 		}
 		#nav-filter-menu ul li a{
 			opacity:.5;
