@@ -21,6 +21,9 @@ html,body{
 	#nav-filter-menu{
 		float:none !important;
 	}
+	#nav-filter-menu ul{
+		width:150px;
+	}
 }
 	a{
 		color:rgba(255,25,0,.7);
@@ -97,7 +100,7 @@ html,body{
 			list-style:none;
 			position: absolute;
 			background: rgb(255,25,0);
-			width: 160px;
+			width: 170px;
 		}
 		#nav-filter-menu ul li{
 			float:left;
