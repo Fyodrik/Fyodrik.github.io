@@ -24,6 +24,9 @@ html,body{
 	#nav-filter-menu ul{
 		width:150px !important;
 	}
+	#nav-filter-menu li+li+li+li:hover ul{
+		left:-20px !important;
+	}
 }
 	a{
 		color:rgba(255,25,0,.7);
