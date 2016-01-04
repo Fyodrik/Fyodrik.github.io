@@ -65,6 +65,7 @@ html,body{
 		margin: 0 auto;
 		padding:0;
 		list-style:none;
+		display: block;
 	}
 		#nav-filter-menu li{
 			margin-right:7px;
@@ -78,6 +79,7 @@ html,body{
 		#nav-filter-menu li a{
 			text-decoration:none;
 			color:#FFF;
+			display: block;
 		}
 		#nav-filter-menu li a:hover{
 			color:rgb(255,25,0);
@@ -91,18 +93,21 @@ html,body{
 			left:-9999px;
 			padding:0;
 			opacity:0;
+			display: block;
 			list-style:none;
 			position: absolute;
 			background: rgb(255,25,0);
 		}
 		#nav-filter-menu ul li{
 			float:left;
+			display: block;
 		}
 		#nav-filter-menu ul li a{
 			opacity:.5;
+			display: block;
 		}
 		#nav-filter-menu li:hover ul{
-			left:0;
+			left:-30px;
 			opacity:1;
 			z-index: 100;
 		}
