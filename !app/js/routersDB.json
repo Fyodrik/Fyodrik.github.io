@@ -26,21 +26,21 @@
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/portfolio/index.html",
                     "FullLink":"https://fyodrik.github.io/tech/portfolio",
-                    "Title":"Tech - Fyodrik"
+                    "Title":"Portfolio - Tech - Fyodrik"
                 },
                 {
                     "UrlHash":"tech/blog",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/blog/index.html",
                     "FullLink":"https://fyodrik.github.io/tech/blog",
-                    "Title":"Tech - Fyodrik"
+                    "Title":"Blog - Tech - Fyodrik"
                 },
                 {
                     "UrlHash":"tech/blog/1",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[tech]/blog/1_x-ray_engine/index.html",
                     "FullLink":"https://fyodrik.github.io/tech/blog/1",
-                    "Title":"Tech - Fyodrik"
+                    "Title":"Разбор игрового движка X-ray (Скоро) - Fyodrik"
                 },
                 {
                     "UrlHash":"audial",
@@ -54,14 +54,14 @@
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[audial]/portfolio/index.html",
                     "FullLink":"https://fyodrik.github.io/audial/portfolio",
-                    "Title":"Audial - Fyodrik"
+                    "Title":"Portfolio - Audial - Fyodrik"
                 },
                 {
                     "UrlHash":"audial/blog",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[audial]/blog/index.html",
                     "FullLink":"https://fyodrik.github.io/audial/blog",
-                    "Title":"Audial - Fyodrik"
+                    "Title":"Blog - Audial - Fyodrik"
                 },
                 {
                     "UrlHash":"visual",
@@ -75,14 +75,14 @@
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[visual]/portfolio/index.html",
                     "FullLink":"https://fyodrik.github.io/visual/portfolio",
-                    "Title":"Visual - Fyodrik"
+                    "Title":"Portfolio - Visual - Fyodrik"
                 },
                 {
                     "UrlHash":"visual/blog",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[visual]/blog/index.html",
                     "FullLink":"https://fyodrik.github.io/visual/blog",
-                    "Title":"Visual - Fyodrik"
+                    "Title":"Blog - Visual - Fyodrik"
                 },
                 {
                     "UrlHash":"other",
@@ -96,14 +96,14 @@
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[other]/portfolio/index.html",
                     "FullLink":"https://fyodrik.github.io/other/portfolio",
-                    "Title":"Other - Fyodrik"
+                    "Title":"Portfolio - Other - Fyodrik"
                 },
                 {
                     "UrlHash":"other/blog",
                     "FromLoc":"https://fyodrik.github.io/",
                     "ContentLink":"[other]/blog/index.html",
                     "FullLink":"https://fyodrik.github.io/other/blog",
-                    "Title":"Other - Fyodrik"
+                    "Title":"Blog - Other - Fyodrik"
                 }
             ]
 }
