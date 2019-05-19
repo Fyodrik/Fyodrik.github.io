@@ -1,7 +1,7 @@
 // (C) 2015 Dmitry Fyodorov (aka Fyodrik)
 // Router.js - браузерная маршрутизация для AJAX-подзагрузки
 // Венгерская нотация
-; var strCurLoc = location.toString(), strSiteDomen = "https://"+location.hostname+"/";//"https://fyodrik.github.io/";
+; var strCurLoc = location.toString(), strSiteDomen = location.hostname+"/";//"https://fyodrik.github.io/";
 
 //Обновление состояния
 
